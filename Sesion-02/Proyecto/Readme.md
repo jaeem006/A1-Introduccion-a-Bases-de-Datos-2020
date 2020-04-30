@@ -30,7 +30,7 @@ Todas las consultas que realices deberás mantenerlas dentro del editor de texto
 
 7. Dentro de la tabla `orderdetails`, obten el total de cada orden.
 
-8. Dentro de la tabla `orders` obten el número de órdenes por año.
+8. Dentro de la tabla `orders` obten el número de órdenes por fecha.
 
 9. Obten el apellido y nombre de los empleados cuya oficina está ubicada en `USA`.
 
