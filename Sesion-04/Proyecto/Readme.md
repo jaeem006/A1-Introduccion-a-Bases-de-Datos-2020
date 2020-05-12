@@ -18,7 +18,7 @@ Las consultas se realizarán sobre la base `sample_training`.
 
 Todas las consultas que realices deberás mantenerlas dentro del MongoDB Compass. Para hacer esto, da clic en el botón con los puntos `···` y en `Toogle Query History`. Busca la última consulta y agregala a favoritos presionando el íncono con la estrella :star:.
 
-1. Obtén los datos de contacto de cada compañía.
+1. Obtén los datos de contacto de cada compañía, es decir: nombre, sitio web, correo electrónico y número telefónico.
 
 2. Obtén la fuente de cada tweet.
 
@@ -28,7 +28,7 @@ Todas las consultas que realices deberás mantenerlas dentro del MongoDB Compass
 
 5. Obtén todos los *post* del autor `machine`.
 
-6. Obtén todos los tweets provenientes de la `web`.
+6. Obtén el contenido de todos los tweets provenientes de la `web`.
 
 7. Obtén todas las compañías fundadas en octubre del 2008.
 
