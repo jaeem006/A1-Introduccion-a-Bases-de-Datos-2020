@@ -18,7 +18,7 @@ Para este proyecto deberás practicar en el uso de agregaciones, pues serán usa
 
 La base de datos y colección que debes usar es `sample_airbnb.listingsAndReviews`.
 
-1. El proyecto consiste en obtener todas las publicaciones que tengan 50 o más comentarios, con un precio mayor o igual a 80, que cuenten con conexión a Internet vía wiFi y estén ubicada en Brazil.
+1. Obtener las 10 publicaciones mas caras que tengan 50 o más comentarios, con un precio mayor o igual a 80, que cuenten con conexión a Internet vía wiFi y estén ubicada en Brazil.
 
 2. Encuentra el hospedaje con mas reviews, en españa que tenga una estancia mínima de 5 noches y tenga televisión por cable.
 
