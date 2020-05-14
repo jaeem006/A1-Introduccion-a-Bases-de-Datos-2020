@@ -24,7 +24,7 @@ La base de datos y colección que debes usar es `sample_airbnb.listingsAndReview
 
 3. Encuentra el hospedaje mas barato en Estados unidos con al menos 3 recamaras, cocina, que permita mascotas y con al menos 10 reviews.
 
-4. Encuentra las 10 publicaciones mas caras en Portugal con para al menos 2 huéspedes.
+4. Encuentra las publicaciones mas caras en Portugal que en su descripción tengan la palabra Fantastic o Great.
 
 **¡¡¡MUCHA SUERTE!!!**
 
