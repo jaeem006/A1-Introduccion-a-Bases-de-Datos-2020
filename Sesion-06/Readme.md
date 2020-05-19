@@ -67,6 +67,22 @@ Una vez creada la vista, podemos consultarla como a cualquier otra colección.
 
 ---
 
+### 4. Tipos de datos
+
+Los tipos de dato son abstracciones de colecciones de valores con operaciones y características en cómun. Por ejemplo el tipo Boolean corresponde a los valores {true, false} con las operaciones $and, $or, $xor, etc.
+
+En Mongo los tipos de dato son muy importantes pues describen el comportamiento que pueden tener determinados campos, los más utilizados son:
+
+- String
+- Int 
+- Object
+- Array 
+- Boolean
+- Date
+
+- [**`EJEMPLO 4`**](Ejemplo-04/Readme.md)
+- [**`RETO 4`**](Reto-04/Readme.md)
+
 ### 3. Proyecto :hammer:
 
 Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
