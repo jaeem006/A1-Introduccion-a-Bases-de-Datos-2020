@@ -67,7 +67,7 @@ Una vez creada la vista, podemos consultarla como a cualquier otra colección.
 
 ---
 
-### 4. Tipos de datos
+### <ins>Tipos de Dato</ins>
 
 Los tipos de dato son abstracciones de colecciones de valores con operaciones y características en cómun. Por ejemplo el tipo Boolean corresponde a los valores {true, false} con las operaciones $and, $or, $xor, etc.
 
