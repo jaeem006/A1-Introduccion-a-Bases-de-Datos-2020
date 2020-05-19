@@ -79,8 +79,7 @@ Array
 Boolean
 Date
 
-- [**`EJEMPLO 4`**](Ejemplo-04/Readme.md)
-- [**`RETO 4`**](Reto-04/Readme.md)
+- [**`RETO 4`**](Reto-04.md)
 
 ### 3. Proyecto :hammer:
 
