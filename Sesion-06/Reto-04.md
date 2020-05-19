@@ -13,4 +13,4 @@
 
 ### 3. Desarrollo :rocket:
 
-Consulta el siguiente link para conocer los tipos de dato que están disponibles en MongoDB y utiliza en Compass la función $type para hacer filtros por tipo desde la barra de busqueda.
+Consulta el siguiente link https://docs.mongodb.com/manual/reference/operator/query/type/#available-types para conocer los tipos de dato que están disponibles en MongoDB y utiliza en Compass la función $type para hacer filtros por tipo desde la barra de busqueda.
