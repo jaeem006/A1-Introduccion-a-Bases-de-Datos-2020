@@ -54,7 +54,7 @@ en este ejemplo se tiene un objeto con un único elemento con nombre book, el va
 
 3. Los JSON soportan los siguientes tipos de dato 
 
-| Tipo    | DEscripción                                        |
+| Tipo    | Descripción                                        |
 |---------|----------------------------------------------------|
 | Number  | Valores numericos                                  |
 | String  | Cadenas de texto                                   |
@@ -64,5 +64,15 @@ en este ejemplo se tiene un objeto con un único elemento con nombre book, el va
 | Null    | El valor vacío                                     |
 
 
+Veamos algunos ejemplos: 
+
+- Number : 1, 0, 3.1416, NaN
+- String : "", " ", "Hola", "Hola ¿cómo estas?" 
+- Boolean : true, false
+- Array : [], [1], ["a", "b"]
+- Object : {}, {"nombre": "Jose"}, {"nombre":  "Jose", "apellido": "Perez"}
+- Null: null
+
+4. Para crear un archivo JSON es necesario que tenga la extensión .json así como la sintaxis correcta. 
 <br/>
   
