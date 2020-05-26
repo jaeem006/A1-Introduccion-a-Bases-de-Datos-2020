@@ -36,7 +36,6 @@ La extensión de un archivo JSON es .json
 
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
 
--
 
 [`Anterior`](../Sesion-07/Readme.md) | [`Siguiente`](../Sesion-08/Readme.md)
 
