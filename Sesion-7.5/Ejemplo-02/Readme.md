@@ -50,6 +50,19 @@ Veamos un ejemplo sencillo:
    ]
 }
 ```
+en este ejemplo se tiene un objeto con un único elemento con nombre book, el valor de este es un arreglo que contiene exactamente dos objetos, cada uno con las cuatro elementos de nombres id, language, edition, author.
+
+3. Los JSON soportan los siguientes tipos de dato 
+
+| Tipo    | DEscripción                                        |
+|---------|----------------------------------------------------|
+| Number  | Valores numericos                                  |
+| String  | Cadenas de texto                                   |
+| Boolean | Valores de verdad (true, false)                    |
+| Array   | Arreglos, una secuencia ordenada de datos          |
+| Object  | Una colección sin orden de parejas de nombre/valor |
+| Null    | El valor vacío                                     |
+
 
 <br/>
   
