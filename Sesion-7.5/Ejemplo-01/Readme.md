@@ -1,6 +1,6 @@
 [`Introducción a Bases de Datos`](../../Readme.md) 
 
-## Ejemplo 1: Llaves foráneas
+## Ejemplo 1: Llaves foráneas, llaves primarias compuestas y valores 
 
 ### 1. Objetivos :dart:
 - Relacionar las tablas de una base de datos en SQL definiendo llaves foráneas.
