@@ -52,6 +52,9 @@ Para usar Git existen diferentes plataformas siendo la mas popular GitHub de Mic
 
 Una forma mas gráfica de visualizar el historial de cambios de un repositorio es con herramientas de gestión como lo es GitKraken, esta herramienta proporciona un ambiente gráfico para la manipulación de repositorios.
 
+<br>
+<br>
+
 ---
 #### Parte II: API's
 
