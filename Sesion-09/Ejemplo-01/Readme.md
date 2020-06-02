@@ -61,6 +61,7 @@ Un commit es una versión de nuestro proyecto, cada commit va a marcar un punto 
 El primer input pide un nombre al commit simplemente ponemos _Create Readme.md_ el siguiente pide una descripción, lo dejamos en blanco y presionamos el botón __commit to master__ 
 
 8. Para finalizar presionamos el la parte superior el botón que dice __Publish repository__ y aparece la siguiente ventana, en la cual simplemente presionamos el botón azul.
+
 ![](img/publish.png)
 
 De esta forma el repositorio se publica en nuestro perfil de GitHub. 
