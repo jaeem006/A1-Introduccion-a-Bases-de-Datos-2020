@@ -16,22 +16,31 @@
 ---
 ##### <ins>Sistemas de control de versiones</ins>
 
-Cuando se está desarrollando (escribiendo código) o manejando sistemas 
+En muchas ocasiones cuando se está desarrollando un proyecto nuestro sistema de carpetas suele verse de la siguiente forma
 
 ![](img/vers.jpg)
 
+Es decir, se tienen muchas copias del mismo proyecto, cada una con la promesa de ser la definitiva. Esto es muy poco eficiente pues no tenemos un control real de los cambios que hay entre cada versión ni podemos revertir cambios específicos entre estas versiones.
 
+Ese es justo el propósito de los sistemas de control de versiones. El sistema de control de versiones registra los cambios realizados sobre un conjunto de archivos a lo largo del desarrollo del proyecto, con dos características elementales: 
 
-- [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
++ Definir con claridad los cambios que hay entre cada una de las versiones
++ La posibilidad de revertir los cambios hechos en una nueva versión
+
+![](img/cont.jpg)
+
+Estos sistemas son especialmente útiles en la programación, en donde poder revertir cambios hechos al código es de mucha ayuda. 
+
+Existen diferentes sistemas de gestor de versiones, quizá los mas conocidos sean: Google Drive o Dropbox. Sin embargo hay gestores de versiones con uso especifico para código como son:  CVS, Git, Subversion, Mercurial y Baazar. El que usaremos en esta sesión es Git.
 
 ---
-##### <ins>JSON</ins>
-JSON (JavaScript Object Notation) es un estándar para intercambio de información que es fácilmente interpretable tanto para una persona como para una computadora. 
+##### <ins>Git</ins>
 
-En la actualidad este formato es utilizado por muchos lenguajes de programación como lo son JavaScript, Java, Python, C, C++, entre otros.
+Git es un sistema de control de versiones diseñado por Linus Torvalds, pensando en lel mantenimiento de versiones de aplicaciones de gran tamaño. Su propósito es llevar registro de los cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre archivos compartidos.
 
-La extensión de un archivo JSON es .json
+Para usar Git existen diferentes plataformas siendo la mas popular GitHub de Microsoft, pero hay otras opciones como son: GitLab, BitBucket, entre muchas otras. 
 
+GitHub
 
 
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
@@ -39,6 +48,6 @@ La extensión de un archivo JSON es .json
 
 #### Parte II: API's
 
-[`Anterior`](../Sesion-07/Readme.md) | [`Siguiente`](../Sesion-08/Readme.md)
+[`Anterior`](../Sesion-08/Readme.md) 
 
 </div>   
