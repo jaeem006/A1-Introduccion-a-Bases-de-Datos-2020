@@ -39,6 +39,7 @@ llenamos la información y creamos el repositorio.
 Este repositorio fue creado de forma local, es decir solo existe en nuestro ordenador, para que se almacene en el servidor de GitHub tenemos que publicarlo. Antes de hacerlo vamos a estructurar el proyecto. Para esto vamos a presionar el botón para ver el repositorio en nuestro sistema de archivos.
 
 6. Ya en el sistema de archivos vamos a crear la siguiente estructura de carpetas muy útil en un proyecto de análisis de datos
+
 ![](img/estructura.png)
 
 En la carpeta __data__ se van a guardar los datasets del proyecto, es decir los archivos con la información. 
@@ -50,6 +51,7 @@ En la carpeta __assets__ se guardan paqueterias o material adicional para el fun
 Y en el archivo __Readme.md__ se da una descripción del proyecto para que el público de GitHub pueda leerla antes de consultar el código. Este archivo se escribe en el lenguaje MarkDown, para conocerlo consulta el siguiente [link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 7. Ya que se tiene la estructura del proyecto, volvemos a GitHub Desktop. Ahora se vera la siguiente vista
+
 ![](img/precommit.png)
 
 En donde se muestran los cambios que se hicieron al repositorio. En la parte superior se muestran los archivos creados, mientras que en la parte inferior aparecen dos inputs para generar un commit. 
