@@ -36,7 +36,7 @@ Existen diferentes sistemas de gestor de versiones, quizá los mas conocidos sea
 ---
 ##### <ins>Git</ins>
 
-<img src="img/github2.jpg" align="right" height="200" width="250">
+<img src="img/github2.jpg" align="right" height="250">
 
 Git es un sistema de control de versiones diseñado por Linus Torvalds, pensando en lel mantenimiento de versiones de aplicaciones de gran tamaño. Su propósito es llevar registro de los cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre archivos compartidos.
 
