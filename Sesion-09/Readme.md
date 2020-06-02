@@ -45,10 +45,17 @@ Para usar Git existen diferentes plataformas siendo la mas popular GitHub de Mic
 
 - [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)
-
+ 
+ ---
 ##### <ins>GitKraken</ins>
+<img src="img/kraken.jpg" align="right" height="250">
 
+Una forma mas gráfica de visualizar el historial de cambios de un repositorio es con herramientas de gestión como lo es GitKraken, esta herramienta proporciona un ambiente gráfico para la manipulación de repositorios.
+
+---
 #### Parte II: API's
+
+
 
 [`Anterior`](../Sesion-08/Readme.md) 
 

@@ -66,8 +66,10 @@ El primer input pide un nombre al commit simplemente ponemos _Create Readme.md_ 
 
 De esta forma el repositorio se publica en nuestro perfil de GitHub. 
 
-En la pestaña __History__ de GitHub Desktop se puede consultar el historial completo de commits.
+En la pestaña __History__ de GitHub Desktop se puede consultar el historial completo de commits, si queremos regresar a uno en particular podemos darle click derecho y seleccionar la opción __revert commit__.
 
-Mientras que en el sitio de GitHub ya debe ser visible nuestro repositorio.
+En el sitio de GitHub ya debe ser visibles nuestros cambios.
+
+
 <br/>
   
