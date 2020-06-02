@@ -27,7 +27,7 @@ Ese es justo el propósito de los sistemas de control de versiones. El sistema d
 + Definir con claridad los cambios que hay entre cada una de las versiones
 + La posibilidad de revertir los cambios hechos en una nueva versión
 
-![](img/cont.jpg)
+![](img/cont.png)
 
 Estos sistemas son especialmente útiles en la programación, en donde poder revertir cambios hechos al código es de mucha ayuda. 
 
@@ -40,11 +40,11 @@ Git es un sistema de control de versiones diseñado por Linus Torvalds, pensando
 
 Para usar Git existen diferentes plataformas siendo la mas popular GitHub de Microsoft, pero hay otras opciones como son: GitLab, BitBucket, entre muchas otras. 
 
-GitHub
 
-
-- [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
+- [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)
+
+##### <ins>GitKraken</ins>
 
 #### Parte II: API's
 
