@@ -7,9 +7,10 @@
 
 ### 1. Objetivos :dart: 
 
-- Repasar qué es una agregación y capa
-- Analizar las agregaciones de agrupamiento
-- Generar vistas que almacenen el resultado de una agregación
+- Crear una base de datos.
+- Definir tablas nuevas para bases de datos relacionales.
+- Poblar bases de datos.
+- Crear relaciones entre Tablas.
 
 ### 2. Contenido :blue_book:
 
