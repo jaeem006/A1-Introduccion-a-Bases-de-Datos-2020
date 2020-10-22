@@ -27,8 +27,6 @@ Para crear bases de datos, se usa el comando:
 CREATE DATABASE <nombre>;
 ```
 
-> *Explicar la diferencia entre servidor de base de datos y base de datos (esquema), así como ejemplos de creación de bases de datos.*
-
 - [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
 
 ---
@@ -46,8 +44,6 @@ Para crear una tabla se usa el comando (en su forma simple):
    );
 ```
 
-> *Mostrar ejemplos de creación de tablas con llaves y los distintos tipos de datos de __MySQL__.*
-
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)
 
@@ -59,14 +55,12 @@ Para cargar datos en una tabla o base de datos completa es usar que se deban uti
 
 Un archivo *CSV* se conforma de un encabezado que indica el nombre de las columnas separado por comas y cada uno de los registros, separando el valor para cada campo por comas. 
 
-> *Mostrar algún archivo CSV y explicar cada una de sus partes.*
-
 - [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
 - [**`RETO 2`**](Reto-02/Readme.md)
 
 ---
 
-##### <ins>Operaciones con bases de datos</ins>
+##### <ins>Operaciones con llaves</ins>
 
 Las llaves son el mecanismo con el cual se identifican los registros de una base de datos o se relacionan estos registros con otros pertenecientes a una tabla distinta.
 
