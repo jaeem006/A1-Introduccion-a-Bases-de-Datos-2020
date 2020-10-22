@@ -1,81 +1,100 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Ejemplo 4
+[`Introducción a Bases de Datos`](../../Readme.md) 
 
-## Ejemplo 4: Configuración de __MongoDB__ en la nube
+## Ejemplo 1: Llaves foráneas, llaves primarias compuestas y valores 
 
 ### 1. Objetivos :dart:
-- Que el alumno configure MongoDB en la nube
+- Relacionar las tablas de una base de datos en SQL definiendo llaves foráneas.
+
 
 ### 2. Requisitos :clipboard:
-- Ninguno
+- Servidor __MySQL__ instalado, puedes usar también los servidores que __BEDU__ ha dispuesto para ti en este módulo.
 
 ### 3. Desarrollo :rocket:
-1. Para poder hacer uso de MongoDB en la nube se hará uso del servicio __Atlas__ proveeido por el propio equipo de MongoDB, abrir la siguiente url, llenar los campos del formulario y dar click en el botón de __Get srtarted free__
 
-   URL: https://www.mongodb.com/cloud/atlas?jmp=docs
+1.  Abrir MySQL Workbench 
 
-   ![Registro en MongoDB atlas](imagenes/registro-mongodb-atlas.png)
+2. Crear las tabla users con los siguientes comandos de SQL
 
-1. Elegir el tipo de __Cluster__, en donde se seleccionará __Starter Clusters__ que es el que es libre de costo, dar click en el botón __Create a Cluster__.
+```sql
+   CREATE TABLE users (
+   		id INT PRIMARY KEY, 
+   		genero VARCHAR(1), 
+   		edad INT, 
+   		ocup INT, 
+   		cp VARCHAR(20)
+    );
+```
+Recordemos que estamos definiendo el campo id como la llave primaria.
 
-   ![Seleccionando cluster](imagenes/seleccionando-cluster.png)
-   Observar que con MongoDB Atlas se crean __Clusters__ y no __Servidores__.
+3. Crear las tabla movies con los siguientes comandos de SQL
 
-1. Después se tienen que seleccionar las opciones para el __Starter Cluster__ y las opciones por omisión son las correctas (AWM Amazon, N. Virginia, M0 Sandbox, MongoDB 4.0, Cluster 0)
+```sql
+   CREATE TABLE movies (
+   		id INT PRIMARY KEY, 
+   		title VARCHAR(100), 
+   		genre VARCHAR(100)
+    );
+```
+Recordemos que estamos definiendo el campo id como la llave primaria.
 
-   ![Configurando el Started Cluster](imagenes/configurando-cluster.png)
-   Y presionar en el botón __Create Cluster__, lo que va a crear un __Cluster__ de trabajo, acción que puede demorar unos 5 mins.
+4. Definamos ahora la tabla ratings, si revisamos el archivo README podemos verificar que esta tabla tiene una relación con las otras dos, pues cada valoración está asociado a una película y un usuario. 
 
-   ![Cluster creándose](imagenes/creando-cluster-01.png)
+Para crear está tabla podría bastar con el siguiente comando
+```sql
+   CREATE TABLE ratings (
+   		userId INT, 
+   		movieId INT, 
+   		rating INT, 
+   		fecha DATETIME
+    );
+```
 
-   Cuando el __Cluster__ ya está creado se observa la página como la siguiente:
+Sin embargo esta definición tiene varios detalles, primero no se esta declarando una llave primaria, y esto se debe a que la información por si sola carece de un identificador único o al menos no es tan evidente como en los casos anteriores, segundo no está modelando la relación que existen en las tablas y como se trata de un modelo relacional modelar esto es esencial y por último los valores en userID y movieID podrían ser null lo cual permitiría agregar reseñas de usuarios o películas inexistentes, entonces tenemos que proponer otra solución. 
 
-   ![Cluster creado](imagenes/creando-cluster-02.png)
 
-1. Lo que sigue es iniciar una conexión al cluster de MongoDB en la nube, esto se realiza dando click en el botón __CONNECT__
+Primero vamos a definir una llave primaria, para está tabla no tenemos un id como en el caso de las tablas anteriores, así que tenemos 3 opciones para elegir la llave:
 
-  ![Conectando al servidor MongoDB](imagenes/conectando-a-mongodb.png)
-  MongoDB Atlas hace una validación y solicita definir que dirección IP se va a conectar a el servidor y que usuario.
+- Podemos elegir un campo ya existente como llave primaria, los principales candidatos son userID y movie ID pero en este caso ninguno es único, pues podríamos tener muchas valoraciones sobre la misma película o provenientes del mismo usuario. Por la misma razón los campos rating y fecha no funcionan como llave primaria.
 
-  Así que dá click en el botón __Add Your Current IP Address__
+- Agregar un nuevo campo id que sirva como en las tablas anteriores, el problema con esta solución es que ya tenemos un dataset con mas de un millon de registros que tendríamos que modificar agregándoles la llave. Es posible pero es tardado y tedioso.
 
-  ![Agregando ip](imagenes/agregando-ip.png)
-  Se sugiere etiquetar la dirección IP, para llevar un registro de a quién corresponde cada IP y más adelante poder eliminar las direcciones que ya no sean necesarias.
+- Definir una llave primaria compuesta. Las llaves compuestas son formadas por la combinación de dos o mas campos que en conjunto definen un identificador único en este caso podríamos usar la combinación de userId y movieId pues se permite una única valoración de un usuario por película. Para definir la llave primaria compuesta de usa el comando PRIMARY KEY y se indican los campos que conformaran esta llave. Para nuestro ejemplo 
+```sql
+   CREATE TABLE ratings (
+   		userId INT, 
+   		movieId INT, 
+   		rating INT, 
+   		fecha DATETIME,
+   		PRIMARY KEY(userId,movieId)
+    );
+```
 
-  Después usar los siguientes datos para crear el usuario de acceso:
+Ahora veamos como obligar a que los campos userId y movieId tengan un valor diferente a null. Para esto usamos el comando NOT NULL, este va a obligar a dar valores a estos campos cuando se cree un nuevo registro de esta tabla. Este comando se usa de la siguiente forma:
 
-  - Usuario: introabd
-  - Password: introabd1234
+```sql
+   CREATE TABLE ratings (
+   		userId INT NOT NULL, 
+   		movieId INT NOT NULL, 
+   		rating INT, 
+   		fecha DATETIME,
+   		PRIMARY KEY(userId,movieId)
+    );
+```
 
-  ![Creando usuario](imagenes/creando-usuario.png)
-  Y presionar en el botón __Create MongoDB User__
+Por último vamos a definir la relación entre las tablas indicando que userId y movieId son llaves foráneas, esto se hace con el comando FOREIGN KEY indicando cual es el campo y después con el comando REFERENCES definimos a que tabla y campo de ésta se está haciendo referencia. 
 
-  Y posteriormente se dá click en el botón __Choose a connection method__ donde se seleccionará __Compass__ para continuar en el siguiente ejemplo.
+```sql
+    CREATE TABLE ratings (
+   		userId INT NOT NULL, 
+   		movieId INT NOT NULL, 
+   		rating INT, 
+   		fecha DATETIME,
+   		PRIMARY KEY(userId,movieId),
+   		FOREIGN KEY(userId) REFERENCES users(id),
+   		FOREIGN KEY(movieId) REFERENCES movies(id)
+	);
+    );
+```
 
-  ![Seleccionando Compass como método de conexión](imagenes/seleccionando-compass.png)
-
-1. Una vez creada la configuración en __MongoDB Atlas__ se realiza la conexión por medio de __MongoDB Compass__, así que estándo en la página de MongoDB Atlas se da click en la opción __Connect with MongoDB Compass__
-
-   ![Eligiendo conexión con MongoDB Compass](imagenes/eligiendo-compass.png)
-
-   Después de dar click, se elige la opción donde ya tenemos __Compass__ instalado dando click en __I have Compass__.
-
-   ![Eligiendo Compass instalado](imagenes/compass-instalado.png)
-   
-   En el punto 1 la opción actual es la correcta y en el punto 2 se dá click en el botón __Copy__
-
-1. Si __MongoDB Compass__ está abierto es necesario cerrarlo y abrirlo nuevamente, al momento de iniciar, __Compass__ detecta la información copiada al portapapeles y pregunta si se desea usar la información para realizar la conexión:
-
-   ![Iniciando Compass](imagenes/iniciando-compass.png)
-   Dar click en el botón __Yes__ y __Compass__ en automático llena todos los campos de conexión, menos la clave, así que se teclea la clave y se da click en el botón __CONNECT__.
-
-   ![Datos de conexión](imagenes/datos-de-conexion.png)
-   Recuerda que los datos de conexión son:
-   - Usuario: introabd
-   - Clave: introabd1234
-
-   __Nota:__ No usar este usuario para colocar información sensible.
-
-   ![Compass conectado a MongoDB Atlas](imagenes/compass-conectado.png)
-   En este punto ya __Compass__ ya estará conectado al __Cluster0__ que como se puede ver en la columna izquierda consta de 3 instancias de MongoDB corriendo en paralelo lo que se puede escalar según las necesidades.
-
-[`Anterior`](../Readme.md#configuración-de-mongodb-en-la-nube) | [`Siguiente`](../Readme.md#operaciones-con-bases-de-datos-1)   
+<br/>
+  

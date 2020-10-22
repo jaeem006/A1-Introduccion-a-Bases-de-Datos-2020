@@ -66,7 +66,21 @@ Un archivo *CSV* se conforma de un encabezado que indica el nombre de las column
 
 ---
 
-#### Parte II: Configuración de Bases No Relacionales
+##### <ins>Operaciones con bases de datos</ins>
+
+Las llaves son el mecanismo con el cual se identifican los registros de una base de datos o se relacionan estos registros con otros pertenecientes a una tabla distinta.
+
+Existen dos tipos de llaves las Primarias y Foráneas. 
+
+
+
+- [**`EJEMPLO 4`**](Ejemplo-04/Readme.md)
+
+---
+
+
+
+<!-- #### Parte II: Configuración de Bases No Relacionales
 
 ---
 ##### <ins>Configuración de __MongoDB__ en la nube</ins>
@@ -122,7 +136,7 @@ Una vez creada una colección, ya sea mediante la carga masiva de datos o de for
 Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
 
 - [**`PROYECTO SESIÓN 7`**](Proyecto/Readme.md)
-
+ -->
 ### 4. Postwork :memo:
 Aplica lo todo lo que aprendiste durante la sesión a tu proyecto personal.
 

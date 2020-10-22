@@ -1,31 +1,78 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Ejemplo 5
-## Ejemplo 5: Operaciones con bases de datos
+[`Introducción a Bases de Datos`](../../Readme.md) 
+
+## Ejemplo 1: Creación de JSON
 
 ### 1. Objetivos :dart:
-- Que el alumno se conecte a un servidor MongoDB
-- Que el alumno realice operaciones con bases de datos
-- Que el alumno cuente con una base de datos para trabajar
+- Repasar el concepto de JSON
+- Conocer los tipos de dato que se pueden almacenar en un JSON
+- Crear archivos JSON
+
 
 ### 2. Requisitos :clipboard:
-1. MongoDB Compass instalado
-1. Datos de conexión al Servidor MongoDB
+- Un editor de texto
 
 ### 3. Desarrollo :rocket:
-1. Conectarse a la base de datos creada en el Ejemplo 4.
 
-1. En la ventana de __MongoDB Compass__ presionar el botón __CREATE DATABASE__ y crear la base de datos __MiNombre__ con la colección __users__, se tiene que definir el nombre de la primera colección para que se pueda crear la base de datos.
+1.  Los principales usos del formato JSON son:
 
-   En lugar de __MiNombre__ utiliza tu nombre y primer apellido para nombrar a tu base de datos.
+- Transmitir información estructurada y ligera a través de una red, principalmente internet.
+- Las API's utilizan este formato para proveer información.
+- Se usan como estructuras de datos en lenguajes de programación modernos.
+- Se utilizan para modelar bases de datos NoSQL (no relacionales).
 
-   ![Creando base de datos](imagenes/creando-basededatos.png)
-   Una vez llenado los datos, presionar el botón __CREATE DATABASE__
+2. Veamos cual es la sintaxis para definir un JSON, está es un subconjunto de la sintaxis de JavaScript.
+- La información se representa con pares nombre/valor.
+- Los Objetos son delimitados pos llaves { }.
+- Primero se escribe el nombre y seguido de dos puntos : después va el valor.
+- Los elementos están separados por una coma.
+- Los arreglos son delimitados por corchetes, los elementos de estos también se separan por comas.
 
-   Se deberá ver nuestra nueva base de datos en la lista:
-   ![Lista de bases de datos](imagenes/lista-basededatos.png)
+Veamos un ejemplo sencillo:
 
-1. Para hacer uso de la base de datos __MiNombre__ dar clic en el nombre y se obtendrá la lista de colecciones disponibles:
+```json
+{
+   "book": [
 
-   ![Lista de colecciones](imagenes/lista-colecciones.png)
-   Se trabajará con Colecciones en el siguiente ejemplo.
+      {
+         "id": "01",
+         "language": "Java",
+         "edition": "third",
+         "author": "Herbert Schildt"
+      },
 
-[`Anterior`](../Readme.md#operaciones-con-bases-de-datos-1) | [`Siguiente`](../Readme.md#realizando-operaciones-con-colecciones-e-importando-datos)      
+      {
+         "id": "07",
+         "language": "C++",
+         "edition": "second",
+         "author": "E.Balagurusamy"
+      }
+
+   ]
+}
+```
+en este ejemplo se tiene un objeto con un único elemento con nombre book, el valor de este es un arreglo que contiene exactamente dos objetos, cada uno con las cuatro elementos de nombres id, language, edition, author.
+
+3. Los JSON soportan los siguientes tipos de dato 
+
+| Tipo    | Descripción                                        |
+|---------|----------------------------------------------------|
+| Number  | Valores numericos                                  |
+| String  | Cadenas de texto                                   |
+| Boolean | Valores de verdad (true, false)                    |
+| Array   | Arreglos, una secuencia ordenada de datos          |
+| Object  | Una colección sin orden de parejas de nombre/valor |
+| Null    | El valor vacío                                     |
+
+
+Veamos algunos ejemplos: 
+
+- Number : 1, 0, 3.1416, NaN
+- String : "", " ", "Hola", "Hola ¿cómo estas?" 
+- Boolean : true, false
+- Array : [], [1], ["a", "b"]
+- Object : {}, {"nombre": "Jose"}, {"nombre":  "Jose", "apellido": "Perez"}
+- Null: null
+
+4. Para crear un archivo JSON es necesario que tenga la extensión .json así como la sintaxis correcta. 
+<br/>
+  

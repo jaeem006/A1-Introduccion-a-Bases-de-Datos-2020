@@ -1,24 +1,31 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Reto 3
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07.5`](../Readme.md) > `Reto 1`
+	
+## Reto 1: Creación de un archivo JSON
 
-## Reto 3: Realizando operaciones con Colecciones e importando datos
+<div style="text-align: justify;">
 
-### 1. Objetivos :dart:
-- Que el alumno cuente con una Colección para importar datos
-- Que el alumno importe datos en formato CSV a una Colección
+### 1. Objetivos :dart: 
+
+- Poner en práctica el uso de JSON.
 
 ### 2. Requisitos :clipboard:
-1. MongoDB Compass instalado
-1. Datos de conexión al Servidor MongoDB
+
+1. Un editor de Texto
 
 ### 3. Desarrollo :rocket:
-Se deberá de crear colecciones e importar los datos de los archivos `movies.csv` y `ratings.csv`.
 
-1. Crear la colección `movies`.
+Crea un archivo JSON con la descripción de tus cinco películas favoritas, siguiendo la estructura
 
-1. Importar datos a la colección `movies` desde el archivo `movies.csv`.
+```json
+"m0" : {
+	"title" : "The Lion King",
+	"genre" : ["Family", "Animation", "Adventure"],
+	"year" : 1994,
+	"crew" : {
+		"director" : "Roger Alers",
+		"writer" : "Irene Mecchi"
+	}
+}
+```
 
-1. Crear la colección `ratings`.
-
-1. Importar datos a la colección `ratings` desde el archivo `ratingsh.csv`.
-
-[`Anterior`](../Ejemplo-06/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+[`Anterior`](../Ejemplo-02/Readme.md)  
