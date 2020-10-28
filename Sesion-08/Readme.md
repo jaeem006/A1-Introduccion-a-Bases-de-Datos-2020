@@ -1,15 +1,15 @@
 [`Introducción a Bases de Datos`](../Readme.md) > `Sesión 07`
 
-## Sesión 7: Configuración de Bases de Datos Locales
+## Sesión 8: Configuración de Bases de Datos Locales
 
 <img src="../imagenes/pizarron.png" align="right" height="100" width="100" hspace="10">
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart: 
 
-- Repasar qué es una agregación y capa
-- Analizar las agregaciones de agrupamiento
-- Generar vistas que almacenen el resultado de una agregación
+- Generar clusters de Mongo
+- Definir bases de datos en Mongo Atlas
+- Modificar colecciones y documentos de bases de datos no relacioales
 
 ### 2. Contenido :blue_book:
 
@@ -76,9 +76,9 @@ Para facilitar la creación de servidores de bases de datos (llamados *clusters*
 
 Esta plataforma, llamada __Atlas__ permite crear un *cluster* de forma gratuita por lo que lo usaremos para ejemplificar este proceso. Puede utilizarlo también para tu proyecto.
 
-> *Explicar el concepto de base de datos en la nube y su principal diferencia con una base de datos local. Mostrar similudes con el servicio AWS de Amazon.*
+<!-- > *Explicar el concepto de base de datos en la nube y su principal diferencia con una base de datos local. Mostrar similudes con el servicio AWS de Amazon.* -->
 
-- [**`EJEMPLO 4`**](Ejemplo-04/Readme.md)
+- [**`EJEMPLO 1`**](Ejemplo-04/Readme.md)
 
 ---
 ##### <ins>Operaciones con bases de datos</ins>
@@ -90,9 +90,9 @@ Lo único que solicita __MongoDB Compass__, a través de una interfaz gráfica, 
 
 Por cierto, __MongoDB Compass__ no es el único cliente de __MongoDB__, también existen otras herramientas como __Robo 3T__ o el *shell* de __MongoDB__.
 
-> *Mostrar la pantalla de creación de bases de datos de Compass*.
+<!-- > *Mostrar la pantalla de creación de bases de datos de Compass*. -->
 
-- [**`EJEMPLO 5`**](Ejemplo-05/Readme.md)
+- [**`EJEMPLO 2`**](Ejemplo-05/Readme.md)
 
 ---
 ##### <ins>Realizando operaciones con Colecciones e importando datos</ins>
@@ -100,8 +100,8 @@ Por cierto, __MongoDB Compass__ no es el único cliente de __MongoDB__, también
 
 Al igual que en __MySQL__ es posible cargar los datos usando formatos de intercambio de información como son __CSV__ o __JSON__. En el caso de __JSON__ se debe separar cada documento por comas.
 
-- [**`EJEMPLO 6`**](Ejemplo-06/Readme.md)
-- [**`RETO 3`**](Reto-03/Readme.md)
+- [**`EJEMPLO 3`**](Ejemplo-06/Readme.md)
+- [**`RETO 1`**](Reto-03/Readme.md)
 
 ---
 ##### <ins>Realizando operaciones con Documentos</ins>
@@ -113,11 +113,11 @@ Una vez creada una colección, ya sea mediante la carga masiva de datos o de for
 1. Editar documentos
 1. Eliminar documentos
 
-- [**`EJEMPLO 7`**](Ejemplo-07/Readme.md)
+- [**`EJEMPLO 4`**](Ejemplo-07/Readme.md)
 
 ---
 
-##### <ins>JSON</ins>
+<!-- ##### <ins>JSON</ins>
 JSON (JavaScript Object Notation) es un estándar para intercambio de información que es fácilmente interpretable tanto para una persona como para una computadora. 
 
 En la actualidad este formato es utilizado por muchos lenguajes de programación como lo son JavaScript, Java, Python, C, C++, entre otros.
@@ -127,7 +127,7 @@ La extensión de un archivo JSON es .json
 
 
 - [**`EJEMPLO 5`**](Ejemplo-05/Readme.md)
-- [**`RETO 3`**](Reto-03/Readme.md)
+- [**`RETO 3`**](Reto-03/Readme.md) -->
 ### 3. Proyecto :hammer:
 
 Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
