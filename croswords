@@ -1,0 +1,31 @@
+Llaves Entidad para definir relaciones o identificar cada registro de las tablas.
+Primaria El identificador único de los registros de una tabla se conoce como llave __________.
+foranea Cuando la llave primaria de una tabla está almacenada en otra para definir una relación entre éstas se le conoce como.
+join Operación mediante la cual se hace una combinación de dos tablas para hacer una consulta sobre ambas.
+izquierdo Si se quiere hacer un join entre las tablas A y B en este orden conservando toda la información de la tabla A se utiliza un join _________.
+full Join que conserva todos los registros de ambas tablas.
+tablas Nombre de la estructura principal de organización de datos en el modelo relacional.
+registros Cada fila de las tablas se conoce como
+documentos Nombre que reciben los registros de información en el modelo no relacional.
+colecciones El equivalente a las tablas en el modelo no relacional.
+servidor El ___________ de bases de datos es el lugar en donde se almacenan diferentes bases.
+dataset conjunto de información a partir del cual se puede poblar una base de datos.
+limpieza Al pre-procesamiento de los datos para estructurarlos de tal forma que sean reconocidos en ciertos formatos se le conoce como
+Atlas Software de MongoDB para la generación y administración de servidores de bases de datos en la nube.
+cluster Conjunto de servidores de bases de datos del gestor MongoDB.
+compuesta Una llave primaria ____________ esta formada por dos o más campos de la tabla.
+noSQL Nombre que recibe el modelo de bases de datos no relacional.
+facebook empresa pionera en el desarrollo e investigación sobre modelos de bases de datos no relacionales.
+consistencia Característica principal de los datos en el modelo relacional gracias a la cual tenemos la garantía de que todos los registros tienen la misma información y se comporta siempre de la misma forma.
+tipos Los _____________ de datos agrupan los valores de una base de datos por sus características y operaciones en común.
+varchar Tipo de dato correspondiente a cadenas de texto en SQL.
+objeto Colección de datos heterogénea  delimitada por llaves  e indexada por su clave.
+arreglo Colección de datos homogénea delimitada por corchetes e indexada por su posición.
+punto  Para acceder a los elementos de un objeto en Mongo se usa la notación __________.
+JSON formato de transferencia de datos comúnmente utilizada en modelos de bases de datos no relacionales para estructurar la información heredada del lenguaje de programación JavaScript.
+CSV formato de intercambio y transferencia de datos que utiliza comas como separadores.
+LIMIT instrucción para limitar el número de resultados en una consulta.
+subconsulta Cuando se quiere obtener información con base en el resultado de otra consulta se hace una ___________
+agregación Método utilizado en Mongo para realizar consultas estructuradas en capas.
+pipeline Nombre del conjunto de capas. 
+match Etapa usada en una agregación para filtrar la información bajo una condición.
