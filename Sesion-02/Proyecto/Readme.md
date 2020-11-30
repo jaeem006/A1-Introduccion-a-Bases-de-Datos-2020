@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Proyecto`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Ejercicios`
 	
-## Proyecto Sesión 2
+## Ejercicios de la Sesión 2
 
 <div style="text-align: justify;">
 

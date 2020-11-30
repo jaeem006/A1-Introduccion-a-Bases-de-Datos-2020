@@ -70,16 +70,16 @@ Una subconsulta es una consulta que se encuentra dentro de otra. Estas subconsul
 
 ---
 
-### 3. Proyecto :hammer:
+### 3. Ejercicios de la sesión :hammer:
 
-Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
+Aplica lo todo lo que aprendiste durante la sesión en este ejercicio. 
 
-- [**`PROYECTO SESIÓN 2`**](Proyecto/Readme.md)
+- [**`Ejercicios de la sesión 2`**](Proyecto/Readme.md)
 
-### 4. Postwork :memo:
+<!-- ### 4. Postwork :memo:
 Aplica lo todo lo que aprendiste durante la sesión a tu proyecto personal.
 
-- [**`POSTWORK SESIÓN 2`**](Postwork/Readme.md)
+- [**`POSTWORK SESIÓN 2`**](Postwork/Readme.md) -->
 
 </br>
 
