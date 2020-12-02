@@ -1,6 +1,6 @@
 [`Introducción a Bases de Datos`](../Readme.md) > `Sesión 2`
 
-## Sesión 2: Agrupaciones y subconsultas
+## Sesión 2: Agrupaciones
 
 <img src="../imagenes/pizarron.png" align="right" height="100" width="100" hspace="10">
 <div style="text-align: justify;">
@@ -10,7 +10,6 @@
 - Escribir consultas que hagan uso de `LIKE`.
 - Entender el funcionamiento de algunas funciones y su efecto en consultas.
 - Realizar agrupamientos en los resultados de una consulta o tabla.
-- Realizar subconsultas a una tabla.
 
 ### 2. Contenido :blue_book:
 

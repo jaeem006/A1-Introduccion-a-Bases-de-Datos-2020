@@ -44,7 +44,7 @@ Las vistas no requieren de almacenamiento adicional y pueden consultar usando la
 
 ---
 
-### 3. Proyecto :hammer:
+### 3. Ejercicios de la sesión :hammer:
 
 Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
 
@@ -53,9 +53,9 @@ Aplica lo todo lo que aprendiste durante la sesión en este proyecto.
 ### 4. Postwork :memo:
 Aplica lo todo lo que aprendiste durante la sesión a tu proyecto personal.
 
-- [**`POSTWORK SESIÓN 3`**](Postwork/Readme.md)
+<!-- - [**`POSTWORK SESIÓN 3`**](Postwork/Readme.md)
 
-</br>
+</br> -->
 
 [`Anterior`](../Sesion-02/Readme.md) | [`Siguiente`](../Sesion-04/Readme.md)
 
