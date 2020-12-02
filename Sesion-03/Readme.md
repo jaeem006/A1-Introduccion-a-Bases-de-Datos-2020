@@ -48,7 +48,7 @@ Las vistas no requieren de almacenamiento adicional y pueden consultar usando la
 
 Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
 
-- [**`PROYECTO SESIÓN 3`**](Proyecto/Readme.md)
+- [**`EJERCICIOS SESIÓN 3`**](Proyecto/Readme.md)
 
 ### 4. Postwork :memo:
 Aplica lo todo lo que aprendiste durante la sesión a tu proyecto personal.
