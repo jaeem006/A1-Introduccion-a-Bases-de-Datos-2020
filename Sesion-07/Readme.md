@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 07`
+[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 04`
 
-## Sesión 7: Configuración de Bases de Datos Locales
+## Sesión 4: Configuración de Bases de Datos Locales
 
 <img src="../imagenes/pizarron.png" align="right" height="100" width="100" hspace="10">
 <div style="text-align: justify;">
@@ -14,15 +14,19 @@
 
 ### 2. Contenido :blue_book:
 
-#### Parte I: Configuración de Bases Relacionales
+##### <ins>Inicialización de servidores locales</ins>
+
+Un servidor de bases de datos se compone de distintas bases con propósitos distintos. Por ejemplo, podemos tener en un mismo servidor una base de datos de empleados y otra de prodcutos, si se trata de una tienda.
+
+- [**`EJEMPLO 0`**](Ejemplo-00/Readme.md)
 
 ---
 ##### <ins>Operaciones con bases de datos</ins>
 <img src="imagenes/imagen1.png" align="right" height="200" width="300">
 
-Un servidor de bases de datos se compone de distintas bases con propósitos distintos. Por ejemplo, podemos tener en un mismo servidor una base de datos de empleados y otra de prodcutos, si se trata de una tienda.
+Dentro de un servidor se pueden crear diferentes bases de datos.
 
-Para crear bases de datos, se usa el comando:
+Para crearlas, se usa el comando:
 
 ```sql
 CREATE DATABASE <nombre>;
@@ -46,7 +50,6 @@ Para crear una tabla se usa el comando (en su forma simple):
 ```
 
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
-- [**`RETO 1`**](Reto-01/Readme.md)
 
 ---
 ##### <ins>Importando datos a una tabla en formato CSV</ins>
@@ -57,7 +60,6 @@ Para cargar datos en una tabla o base de datos completa es usar que se deban uti
 Un archivo *CSV* se conforma de un encabezado que indica el nombre de las columnas separado por comas y cada uno de los registros, separando el valor para cada campo por comas. 
 
 - [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
-- [**`RETO 2`**](Reto-02/Readme.md)
 
 ---
 
@@ -131,11 +133,12 @@ Una vez creada una colección, ya sea mediante la carga masiva de datos o de for
 Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
 
 - [**`PROYECTO SESIÓN 7`**](Proyecto/Readme.md)
- -->
+
 ### 4. Postwork :memo:
 Aplica lo todo lo que aprendiste durante la sesión a tu proyecto personal.
 
 - [**`POSTWORK SESIÓN 7`**](Postwork/Readme.md)
+ -->
 
 </br>
 

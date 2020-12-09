@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Ejemplo 2
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 2
 
 ## Ejemplo 2: Realizando operaciones con tablas
 
@@ -116,4 +116,4 @@
 
    ![image](imagenes/s7e23.png)
 
-[`Anterior`](../Readme.md#relacionado-operaciones-con-tablas) | [`Siguiente`](../Reto-01/Readme.md)   
+[`Anterior`](../Readme.md#relacionado-operaciones-con-tablas) | [`Siguiente`](../Readme.md)   

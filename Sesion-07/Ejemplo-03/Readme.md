@@ -94,4 +94,4 @@
    
    ![imagen](imagenes/s7e39.png)
 
-[`Anterior`](../Readme.md#importando-datos-a-una-tabla-en-formato-csv) | [`Siguiente`](../Reto-02/Readme.md)      
+[`Anterior`](../Readme.md#importando-datos-a-una-tabla-en-formato-csv) | [`Siguiente`](../Readme.md)      
