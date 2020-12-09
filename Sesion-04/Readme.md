@@ -65,16 +65,12 @@ Al igual que con las proyecciones, los filtros se construyen usando __JSON__. En
 
 ---
 
-### 3. Proyecto :hammer:
+### 3. EJERCICIOS :hammer:
 
-Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
+Aplica lo todo lo que aprendiste durante la sesión en estos ejercicios. 
 
-- [**`PROYECTO SESIÓN 4`**](Proyecto/Readme.md)
+- [**`EJERCICIOS SESIÓN 4`**](Proyecto/Readme.md)
 
-### 4. Postwork :memo:
-Aplica lo todo lo que aprendiste durante la sesión a tu proyecto personal.
-
-- [**`POSTWORK SESIÓN 4`**](Postwork/Readme.md)
 
 </br>
 
