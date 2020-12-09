@@ -10,23 +10,23 @@
  - Servidor __MySQL__ instalado
 
 ### 3. Desarrollo :rocket:
-1. Para cargar nuestros conjuntos de datos necesitamos que estén en un formato CSV. Como recordarás, el archivo `users.dat` tiene el siguiente formato:
+1. Para cargar nuestros conjuntos de datos necesitamos que estén en un formato CSV. Como recordarás, el archivo `users.csv` tiene el siguiente formato:
 
    ```
-   1::F::1::10::48067
-   2::M::56::16::70072
-   3::M::25::15::55117
-   4::M::45::7::02460
-   5::M::25::20::55455
-   6::F::50::9::55117
-   7::M::35::1::06810
-   8::M::25::12::11413
-   9::M::25::17::61614
-   10::F::35::1::95370
+   1,F,1,10,48067
+   2,M,56,16,70072
+   3,M,25,15,55117
+   4,M,45,7,02460
+   5,M,25,20,55455
+   6,F,50,9,55117
+   7,M,35,1,06810
+   8,M,25,12,11413
+   9,M,25,17,61614
+   10,F,35,1,95370
    ...
    ``` 
 
-   Para que sea un archivo CSV válido, éste debe incluir una línea llamada encabezado que indique el nombre de cada uno de los campos y además cada campo debe separarse por una coma (CSV, significa Comma Separated Value). Por lo tanto, necesitamos hacer una *limpieza de datos*.
+  <!--  Para que sea un archivo CSV válido, éste debe incluir una línea llamada encabezado que indique el nombre de cada uno de los campos y además cada campo debe separarse por una coma (CSV, significa Comma Separated Value). Por lo tanto, necesitamos hacer una *limpieza de datos*.
 
    Abre un editor de texto el archivo `users.dat` y agrega la siguiente línea al inicio:
 
@@ -50,7 +50,7 @@
    10,F,35,1,95370
    ```
 
-   Guárdalo con el nombre `users.csv`.
+   Guárdalo con el nombre `users.csv`. -->
 
 1. Para importar archivos desde __MySQL Workbench__ daremos clic derecho en el esquema que creamos en el [Ejemplo 1](../Ejemplo-01/Readme.md) y daremos clic en `Table Import Data Wizard`, se abrirá la siguiente ventana:
    
