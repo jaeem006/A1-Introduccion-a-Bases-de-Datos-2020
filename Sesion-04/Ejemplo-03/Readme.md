@@ -1,120 +1,97 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 3`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Ejemplo 3
 
-## Ejemplo 3: Filtros básicos
-
-<div style="text-align: justify;">
+## Ejemplo 3: 	Importando datos a una tabla en formato CSV
 
 ### 1. Objetivos :dart:
-
-- Usar la opción `FILTER` para filtrar documentos
-- Usar la opción `ORDER` para ordenar documentos
-- Usar la opción `LIMIT` para limitar documentos
+ - Conocer el procedimiento para importación de datos a una tabla
+ - Validar que la correcta importación de los datos
 
 ### 2. Requisitos :clipboard:
-
-1. MongoDB Compass instalado.
+ - Servidor __MySQL__ instalado
 
 ### 3. Desarrollo :rocket:
+1. Para cargar nuestros conjuntos de datos necesitamos que estén en un formato CSV. Como recordarás, el archivo `users.csv` tiene el siguiente formato:
 
-1. Dentro de la colección `movies`, vuelve a dar clic en el botón `OPTIONS`.  Esta vez usaremos el campo `FILTER`, esta opción es equivalente a la cláusula `WHERE` de SQL. Por ejemplo, podemos filtrar todas las películas del año 1993.
-
-   *Consulta en SQL*
-  
-   ```sql
-   SELECT *
-   FROM movies
-   WHERE year = 1993;
    ```
-  
-   *Consulta en MongoDB usando JSON*
-  
-   ```json
-   {year: 1993}
+   1,F,1,10,48067
+   2,M,56,16,70072
+   3,M,25,15,55117
+   4,M,45,7,02460
+   5,M,25,20,55455
+   6,F,50,9,55117
+   7,M,35,1,06810
+   8,M,25,12,11413
+   9,M,25,17,61614
+   10,F,35,1,95370
+   ...
+   ``` 
+
+  <!--  Para que sea un archivo CSV válido, éste debe incluir una línea llamada encabezado que indique el nombre de cada uno de los campos y además cada campo debe separarse por una coma (CSV, significa Comma Separated Value). Por lo tanto, necesitamos hacer una *limpieza de datos*.
+
+   Abre un editor de texto el archivo `users.dat` y agrega la siguiente línea al inicio:
+
+   ```
+   id,genero,edad,ocup,cp
    ```
 
-    ![imagen](imagenes/s4e31.png)
+   Ahora reemplaza todos los símbolos, `::` por `,`. El archivo final debe verse así:
 
-2. Al igual que en SQL, tenemos operadores relacionales, por ejemplo queremos todas las películas de los años 2000.
-
-   *Consulta en SQL*
-   
-   ```sql
-   SELECT *
-   FROM movies
-   WHERE year >= 2000;
    ```
-   
-   *Consulta en MongoDB usando JSON*
-   
-   ```json
-   {year: {$gte: 2000}}
+   id,genero,edad,ocup,cp
+   1,F,1,10,48067
+   2,M,56,16,70072
+   3,M,25,15,55117
+   4,M,45,7,02460
+   5,M,25,20,55455
+   6,F,50,9,55117
+   7,M,35,1,06810
+   8,M,25,12,11413
+   9,M,25,17,61614
+   10,F,35,1,95370
    ```
-   
-   *Observación:* Las operaciones de MongoDB siempre aparecen precedidas del símbolo `$`.
-   
-   ![imagen](imagenes/s4e32.png)
 
-3. También tenemos las operaciones lógica. Por ejemplo, si quisiéramos las películas comprendidas entre el año 2012 y 2019.
+   Guárdalo con el nombre `users.csv`. -->
 
-   *Consulta en SQL*
+1. Para importar archivos desde __MySQL Workbench__ daremos clic derecho en el esquema que creamos en el [Ejemplo 1](../Ejemplo-01/Readme.md) y daremos clic en `Table Import Data Wizard`, se abrirá la siguiente ventana:
    
-   ```sql
-   SELECT *
-   FROM movies
-   WHERE year >= 2012
-     AND year <= 2019;
-   ```
+   ![imagen](imagenes/s7e31.png)
    
-   *Consulta en MongoDB usando JSON*
+   Da clic en el botón `Browse` y busca el archivo `users.csv` en tu equipo.
    
-   ```json
-   {$and: [{year: {$gte: 2012}},{year: {$lte: 2019}}]}
-   ```
+   ![imagen](imagenes/s7e32.png)
    
-   *Observación:* Las operaciones que reciben más de un argumento, usan arreglos para separar los mismos.
+   Da clic en `Next`. Se abrirá la siguiente ventana, en donde elegiremos la primera opción para cargar los datos directamente en nuestra tabla `users`. Si no está seleccionada la tabla, búscala en el desplegable.
+   
+   ![imagen](imagenes/s7e33.png)
+   
+   Da clic en `Next` y verifica la asociación de campos.
+   
+   ![imagen](imagenes/s7e34.png)
+   
+   Si todo está en orden, da clic en `Next`.
+   
+   ![imagen](imagenes/s7e35.png)
+   
+   Confirma la advertencia dando clic en `Next` e iniciará la importación de datos.
+   
+   ![imagen](imagenes/s7e36.png)   
 
-   ![imagen](imagenes/s4e33.png)
-   
-   Para conocer más operaciones de este tipo, revisa la [documentación de MongoDB](https://docs.mongodb.com/manual/reference/operator/query/). 
-   
-4. Para ordenar, usaremos la opción `SORT`. Para ordenar, hay que agregar un JSON con el nombre de los campos por los cuales se desea ordenar y agregar un valor 1 si se desea ordenar ascendentemente o -1 para un ordenamiento descendente. Por ejemplo, ordenaremos las películas por año.
+   Cuando todo finalice, da clic en `Next`.
 
-   *Consulta en SQL*
+   ![imagen](imagenes/s7e37.png)
 
-   ```sql
-   SELECT *
-   FROM movies
-   ORDER BY year ASC;
-   ```
-   
-   *Consulta en MongoDB usando JSON*
-   
-   ```json
-   {year: 1}
-   ```
-   
-   ![imagen](imagenes/s4e34.png)
-   
-    *Consulta en SQL*
+   Confirma los cambios dando clic en `Finish`.
+
+   ![imagen](imagenes/s7e38.png)
+
+1. El resultado indica que se han afectado 6040 registros, así que al parecer la importación se ha realizado con éxito, así que ahora se vamos a comprobar esto haciendo una consulta para imprimir los primeros 10 registros de la tabla `users`.
 
    ```sql
    SELECT *
-   FROM movies
-   ORDER BY year DESC;
+   FROM users
+   LIMIT 10;
    ```
    
-   *Consulta en MongoDB usando JSON*
-   
-   ```json
-   {year: -1}
-   ```
-   
-   ![imagen](imagenes/s4e35.png)
-   
-5. Finalmente, para limitar los resultados de una consulta, podemos usar la opción `LIMIT`. Sólo basta con agregar el número deseado. Por ejemplo, las cinco películas de los últimos años.
+   ![imagen](imagenes/s7e39.png)
 
-   ![imagen](imagenes/s4e36.png)
-
-[`Anterior`](../Readme.md#filtros-básicos) | [`Siguiente`](../Reto-02/Readme.md)
-
-</div>
+[`Anterior`](../Readme.md#importando-datos-a-una-tabla-en-formato-csv) | [`Siguiente`](../Readme.md)      

@@ -1,41 +1,50 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 1
 
-## Ejemplo 1: Conexión a MongoDB
+## Ejemplo 1: Operaciones con bases de datos
 
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart:
-
-- Realizar la conexión a MongoDB mediante el cliente MongoDB Compass.
+### 1. Objetivos :dart: 
+- Conectarse a un __MySQL__	localmente.
+- Conocer las operaciones sobre bases de datos.
 
 ### 2. Requisitos :clipboard:
-
-1. MongoDB Compass instalado.
+- Servidor de __MySQL__ instalado u ejecutándose.
 
 ### 3. Desarrollo :rocket:
 
-1. Abre MongoDB Compass. En esta primera pantalla se muestran, del lado izquierdo, las conexiones que tienes configuradas o se muestra en blanco en caso de que sea la primera vez que realizas una conexión.
+1. Conectate a tu base de datos desde __MySQL Workbench__ con las credenciales correspondientes a la configuración de tu servidor.
 
-   ![imagen](imagenes/s4e11.png)
+1. Para crear una base de datos se usa la instrucción `CREATE DATABASE Nombre`, donde `Nombre` suele ser el nombre del proyecto, pero para el curso usa tú nombre y un apellido o un seudónimo en redes sociales que prefieras.
 
-2. Abajo del título `New Connection`, da clic en el texto que dice `Fill in connection fields individually`. Cambiará el formato de la pantalla. Introduce los datos necesarios para realizar la conexión. Pide al experto que te los proporcione.
+   ![imagen](imagenes/s7e11.png)
 
-   - **Hostname:** Dirección del servidor al cuál nos conectaremos.
-   - **Port:** Puerto a través del cual realizaremos la conexión.
-   - **SRV Record:** Dejar apagado.
-   - **Authentication:** Username / Password.
-   - **Username:** Nombre de usuario.
-   - **Password:** Contraseña de acceso.
-   - **Authentication Database:** Base de datos con la que se definió el usuario.
+   El resultado indica que el comando se ejecutó de forma correcta, la cantidad de líneas o renglones afectados y el tiempo de ejecución.
+
+   **Sugerencia.**  Cuando este comando sea usado con *scripts* para automatizar tareas, se sugiere usar la siguiente variante:
    
-   ![imagen](imagenes/s4e12.png)
+   ```sql
+   CREATE DATABASE IF NOT EXISTS Nombre;
+   ```
 
-3. Presiona el botón `Connect` y y si obtienes una pantalla como la que se muestra en la siguiente imagen, la conexión se habrá realizado con éxito.
+   para evitar que se genere un error en caso de que la base de datos ya exista y se intente crear de nuevo.
 
-   ![imagen](imagenes/s4e13.png)
+1. Para borrar una base de datos se usa el comando  `DROP DATABASE Nombre`
+   
+   ![imagen](imagenes/s7e12.png)
 
-**¡Felicidades! Haz realizado tu primera conexión a una base de datos con MongoDB**
+   **Sugerencia.**  Cuando este comando sea usado con scripts para automatizar tareas, se sugiere usar la siguiente variante:
 
-[`Anterior`](../Readme.md#conexión-a-mongodb) | [`Siguiente`](../Readme.md#colecciones-documentos-y-proyecciones)
+   ```sql
+   DROP DATABASE IF EXISTS Nombre;
+   ```
+
+   para evitar que se genere un error en caso de que la base de datos ya no exista y se intente borrar de nuevo.
+
+1. Como paso final, se creará nuevamente la base de datos y se hará uso de ella como la base de datos actual, para ello se usará el comando `USE Nombre`
+
+   ![imagen](imagenes/s7e13.png)
+
+[`Anterior`](../Readme.md#operaciones-con-bases-de-datos) | [`Siguiente`](../Readme.md#realizando-operaciones-con-tablas)      
 
 </div>

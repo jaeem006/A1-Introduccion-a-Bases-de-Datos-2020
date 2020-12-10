@@ -1,18 +1,26 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Reto 2
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Reto 2`
+	
+## Reto 2: Filtros básicos
 
-## Reto 2: Importando datos a una tabla en formato CSV
+<div style="text-align: justify;">
 
 ### 1. Objetivos :dart:
-- Aplicar el procedimiento para importación de datos a una tabla
-- Validar que la correcta importación de los datos
+
+- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
 
 ### 2. Requisitos :clipboard:
-- Servidor __MySQL__ instalado
+
+1. MongoDB Compass instalado.
 
 ### 3. Desarrollo :rocket:
 
-1. Usando como base el archivo `movies.dat`, limpiarlo e importar los datos en la tabla `movies` creada en el Reto 1.
+Usando la base de datos `sample_mflix`, agrega proyeccciones, filtros, ordenamientos y límites que permitan contestar las siguientes preguntas.
 
-1. Usando como base el archivo `ratings.dat`, limpiarlo e importar los datos en la tabla `ratings` creada en el Reto 2.
+- ¿Qué comentarios ha hecho Greg Powell?
+- ¿Qué comentarios han hecho Greg Powell o Mercedes Tyler?
+- ¿Cuál es el máximo número de comentarios en una película?
+- ¿Cuál es título de las cinco películas más comentadas?
 
-[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#configuración-de-mongodb-en-la-nube)
+[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+
+</div>

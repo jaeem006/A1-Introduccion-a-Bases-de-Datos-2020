@@ -1,25 +1,23 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Postwork
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Postwork`
 
-## Postwork Sesión 7
+## Postwork Sesión 4
 
-### 1. Objetivos :dart:
-- Instalar localmente la base de datos que utilizarás en tu proyecto.
+<div style="text-align: justify;">
+
+### 1. Objetivos :dart: 
+
+- Continuar con el planteamiento inicial del proyecto.
 
 ### 2. Requisitos :clipboard:
-1. Estructura de tu base de datos en __MySQL__
-1. Estructura de tu base de datos en __MongoDB__
+
+1. MongoDB instalado.
 
 ### 3. Desarrollo :rocket:
-Ahora que has visto cómo se realiza la creación de bases de datos localmente, tanto en __MySQL__ como en __MongoDB__,
-elige la base de datos con la que te sientas más cómodo y realiza las siguientes actividades:
 
-1. Instala el sistema gestor de bases de datos que hayas elegido en tu equipo.
+#### Mismas preguntas, diferente lenguaje
 
-1. Crea las tablas o colecciones necesarias para tu proyecto.
+Usando como base las preguntas que definiste en el Postwork de la Sesión 1, reescribe las consultas usando JSON. Debes especificar en cada caso, si el JSON corresponde a una proyección, filtro, ordenamiento o límite de resultados.
 
-1. Ejecuta las consultas que has realizado a lo largo de todos los postworks del módulo y guarda las más importantes
-como vistas. Esto será útil en el resto de los módulos para que puedas tomar los datos correspondientes.
+[`Anterior`](../Readme.md#4-postwork-memo) | [`Siguiente`](../Readme.md#4-postwork-memo)
 
-Si tienes dudas, no dudes en contactar a tu experto. 
-
-[`Anterior`](../Readme.md#4-postwork-memo) | [`Siguiente`](../Readme.md#4-postwork-memo)      
+</div>

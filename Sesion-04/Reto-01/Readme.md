@@ -1,25 +1,24 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Reto 1`
-	
-## Reto 1: Colecciones, Documentos y Proyecciones
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Reto 1
 
-<div style="text-align: justify;">
+## Reto 1: Realizando operaciones con tablas
 
 ### 1. Objetivos :dart:
-
-- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
+- Realizar operaciones SQL para administrar tablas
+- Crear tablas acorde a los datos
 
 ### 2. Requisitos :clipboard:
-
-1. MongoDB Compass instalado.
+- Servidor __MySQL__ instalado
 
 ### 3. Desarrollo :rocket:
 
-Usando la base de datos `sample_mflix`, proyecta los datos que se solicitan.
+1. Definir los campos y tipos de datos para la tabla `movies` haciendo uso de los archivos `movies.dat` y `README`.
 
-- Fecha, nombre y texto de cada comentario.
-- Título, elenco y año de cada película.
-- Nombre y contraseña de cada usuario.
+1. Crear la tabla `movies` (recuerda usar el mismo nombre del archivo sin la extensión para vincular nombres de tablas con archivos).
 
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#filtros-básicos)
+1. Definir los campos y tipos de datos para la tabla `ratings` haciendo uso de los archivos `ratings.dat` y `README`.
 
-</div>
+1. Crear la tabla ratings (recuerda usar el mismo nombre del archivo sin la extensión para vincular nombres de tablas con archivos)
+
+<br/>
+
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#importando-datos-a-una-tabla-en-formato-csv)   
