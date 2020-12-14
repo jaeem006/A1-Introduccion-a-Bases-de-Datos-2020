@@ -1,12 +1,12 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Reto 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Reto 1`
 	
-## Reto 1: Colecciones, Documentos y Proyecciones
+## Reto 1: Agrupamientos
 
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart:
+### 1. Objetivos :dart: 
 
-- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
+- Poner en práctica el uso de agrupamientos.
 
 ### 2. Requisitos :clipboard:
 
@@ -14,12 +14,6 @@
 
 ### 3. Desarrollo :rocket:
 
-Usando la base de datos `sample_mflix`, proyecta los datos que se solicitan.
+Con base en el ejemplo 1, modifica el agrupamiento para que muestre el costo promedio por habitación por país de las propiedades de tipo casa.
 
-- Fecha, nombre y texto de cada comentario.
-- Título, elenco y año de cada película.
-- Nombre y contraseña de cada usuario.
-
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#filtros-básicos)
-
-</div>
+[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#asociación-de-colecciones)   

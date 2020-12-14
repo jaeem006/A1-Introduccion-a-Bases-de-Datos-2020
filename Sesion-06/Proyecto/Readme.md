@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Proyecto`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Proyecto`
 	
-## Proyecto Sesión 6
+## Proyecto Sesión 5
 
 <div style="text-align: justify;">
 
@@ -14,14 +14,18 @@
 
 ### 3. Desarrollo :rocket:
 
-Trabajaremos con la base de Datos de AirBnB.
+Para este proyecto deberás practicar en el uso de agregaciones, pues serán usadas durante la siguiente sesión.
 
-El proyecto consiste en obtener las siguientes consultas: 
-1. Obtener el número de propiedades en cada pais ordenadas de mayor a menor.
-3. Obtener el número de propiedades en cada calle en el mundo.
-4. Obtener el número de propiedades por cada tipo de propiedad.
-6. Obtener wl promedio del costo de las propiedades en Australia.
-7. Obtener la suma del mínimo de noches de todas las propiedades con Wifi.
+La base de datos y colección que debes usar es `sample_airbnb.listingsAndReviews`.
+
+1. Obtener las 10 publicaciones mas caras que tengan 50 o más comentarios, con un precio mayor o igual a 80, que cuenten con conexión a Internet vía wiFi y estén ubicada en Brazil.
+
+2. Encuentra el hospedaje con mas reviews, en españa que tenga una estancia mínima de 5 noches y tenga televisión por cable.
+
+3. Encuentra el hospedaje mas barato en Estados unidos con al menos 3 recamaras, cocina, que permita mascotas y con al menos 10 reviews.
+
+4. Encuentra las publicaciones mas caras en Portugal que en su descripción tengan la palabra Fantastic o Great.
+
 **¡¡¡MUCHA SUERTE!!!**
 
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)   
+[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)

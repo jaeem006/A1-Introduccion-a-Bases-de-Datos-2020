@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Postwork`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Postwork`
 
-## Postwork Sesión 6
+## Postwork Sesión 5
 
 <div style="text-align: justify;">
 
@@ -14,10 +14,8 @@
 
 ### 3. Desarrollo :rocket:
 
-##### Mismas preguntas, diferente lenguaje
+#### Mismas preguntas, diferente lenguaje
 
 Usando como base las preguntas que definiste en el Postwork de las sesiones pasadas, reescribe o agrega nuevas consultas usando JSON. Debes especificar en cada caso, si el JSON corresponde a una proyección, filtro, ordenamiento, límite de resultados o a una agregación.
 
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)   
-
-</div>
+[`Anterior`](../Readme.md#4-postwork-memo) | [`Siguiente`](../Readme.md#4-postwork-memo)

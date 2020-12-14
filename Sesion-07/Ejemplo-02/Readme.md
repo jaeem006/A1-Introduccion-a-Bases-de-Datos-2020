@@ -1,13 +1,12 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 2`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Ejemplo 2`
 
-## Ejemplo 2: Colecciones, Documentos y Proyecciones
+## Ejemplo 2: Asociación de colecciones
 
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart:
+### 1. Objetivos :dart: 
 
-- Usar la interfaz de MongoDB para listar las colecciones y documentos de una base de datos.
-- Realizar filtros por proyección.
+- Asociar colecciones mediante sus campos en común, usando la agregación `$lookup`.
 
 ### 2. Requisitos :clipboard:
 
@@ -15,39 +14,63 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Abre MongoDB Compass. En esta primera pantalla se muestran las bases de datos contenidas en el servidor. Da clic en la base de datos `sample_mflix`. A partir de ahora usaremos esa base de datos para los retos y ejemplos dentro de la sesión.
+En la base de datos, existen varias colecciones que pueden asociarse. Por ejemplo la colección `comments` tiene la siguiente estructura:
 
-   ![imagen](imagenes/s4e21.png)
+![imagen](imagenes/s6e21.png)
 
-2. En la ventana que apareció se muestran las **colecciones** para la base de datos que elegiste. También puedes navegar entre las colecciones con el menú desplegable de la izquierda. Da clic en la colección `users`.
-   
-   ![imagen](imagenes/s4e22.png)
+Sin embargo, para conocer la película sobre la cual se hizo el comentario, es necesario consultar la colección `movies`. Y buscar el id que leímos de la colección `comments`.
 
-3. Ahora estás apreciando los documentos que hay dentro de la colección `users`. En el menú que se encuentra sobre los documentos, puedes cambiar el formato en que se muestran, por defecto, la forma de visualizarlos es en formato de lista aunque hay otras opciones como JSON o formato de tabla como en SQL.
+![imagen](imagenes/s6e22.png)
 
-   ![imagen](imagenes/s4e23.png)
-   
-4. Por defecto, la interfaz de MongoDB Compass muestra todos los campos de todos los documentos, esto es equivalente a ejecutar la instrucción de SQL:
+Para facilitar esta búsqueda podemos usar una agregación `$lookup` que permite asociar dos colecciones. Algo similar a la operación `JOIN` de `SQL`.
 
-   ```sql
-   SELECT *
-   FROM users;
-   ```
-   
-   Para mostrar algún campo en específico, como lo hacíamos en SQL, usaremos proyecciones. Para usar una proyección, hay que dar clic en el botón `OPTIONS`. Se abrirá un formulario, llenaremos el campo llamado `PROJECT`. 
-   
-   En las bases de datos relacionales, la forma de comunicarnos con la base es mediante SQL, en MongoDB lo haremos a través de JSON. De esta forma, para proyectar los datos, usaremos un JSON, separando cada campo deseado, con un valor de 1. Por ejemplo, si queremos obtener únicamente el nombre y correo del usuario, escribimos lo siguiente.
-   
-   ```json
-   {name:1, email:1}
-   ```
-   
-   Para mostrar la proyección, damos clic en el botón `FIND`.
-   
-   ![imagen](imagenes/s4e24.png)
+Agregamos la agregación `$lookup` con el siguiente json:
 
-**¡Felicidades! Haz realizado tu primera consulta en una base de datos con MongoDB**
+```json
+{
+  from: 'movies',
+  localField: 'movie_id',
+  foreignField: '_id',
+  as: 'pelicula'
+}
+```
 
-[`Anterior`](../Readme.md#colecciones-documentos-y-proyecciones) | [`Siguiente`](../Reto-01/Readme.md)
+Esto nos indica que la colección actual (`comments`) se asociará con la conexión `movies` que el campo que tomaremos para asociarlas será `comments.movie_id` y `movies._id` respectivamente y que los resultados serán almacenados en un arreglo llamado `pelicula`.
 
-</div>
+![imagen](imagenes/s6e23.png)
+
+Elegimos únicamente los campos de interés, primero extrayendo el nombre del objeto que envuelve el arreglo y posteriormente proyectando únicamente los campos deseados
+
+- `$addFields`
+
+```json
+{
+  pelicula_objeto: {$arrayElemAt: ["$pelicula",0]}
+}
+```
+
+- `$addFields`
+
+```json
+{
+  pelicula_nombre: "$pelicula_objeto.title"
+}
+```
+
+- `$project`
+
+```
+{
+  _id:0,
+  pelicula_nombre:1,
+  name:1,
+  text:1
+}
+```
+
+**No cierres, este *pipeline*, pues lo usaremos más adelante.**
+
+![imagen](imagenes/s6e24.png)
+
+[`Anterior`](../Readme.md#asociación-de-colecciones) | [`Siguiente`](../Reto-02/Readme.md)   
+

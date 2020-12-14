@@ -1,73 +1,50 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 3`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 6
 
-## Ejemplo 3: Introducción a las agregaciones
+## Ejemplo 6: Realizando operaciones con Colecciones e importando datos
 
-<div style="text-align: justify;">
-
-### 1. Objetivos :dart: 
-
-- Entender el concepto de agregación y su similitud con los agrupamientos y subconsultas de __SQL__.
+### 1. Objetivos :dart:
+- Que el alumno realice operaciones con Colecciones
+- Que el alumno cuente con una Colección para importar datos
+- Que el alumno importe datos en formato CSV a una Colección
 
 ### 2. Requisitos :clipboard:
-
-1. MongoDB Compass instalado.
+1. MongoDB Compass instalado
+1. Datos de conexión al Servidor MongoDB
 
 ### 3. Desarrollo :rocket:
+Las Colecciones en MongoDB son el equivalente a las Tablas en SQL, así que cada archivo en formato CSV necesita de una Coleción para poder ser importado.
 
-Cuando revisamos __SQL__ usamos agrupamientos que aplicaban una función a una columna reduciéndola a un valor que podía ser una suma, un conteo o calcular un promedio, por ejemplo. 
+A diferencia de SQL, las Colecciones sólo se crean y no es necesario definir campos y tipos de datos.
 
-En __MongoDB__ podemos realizar lo mismo mediante el uso de agregaciones. Las agregaciones, permiten realizar distintos filtros usando *capas*. Una capa es el resultado de la aplicación de algún filtro, proyección, agrupamiento, ordienamiento, etc. Cada capa puede usarse en una nueva capa. La primera capa siempre será la colección completa.
+1. Partiendo de la lista de colecciones obtenida al final del ejemplo anterior, se procederá a crear una nueva colección llamada `movies`.
 
-Al conjunto de capas generadas en una agregación se le conoce como *pipeline*.
-
-Por ejemplo, queremos saber cuál es la propiedad con mayor número de servicios (`amenities`) de la colección `sample_airbnb.listingsAndReviews`. Para usar agregaciones, daremos clic en la pestaña `Aggregations` de Compass. 
-
-- Primero debemos obtener la longitud del arreglo `amenities` para saber el número de servicios de cada documento. Para esto, seleccionamos `addFields` en la primera capa.
-
-   Con `addFields` podemos agregar campos como resultado de aplicar funciones a otros campos de la colección. De esta forma agregaremos el tamaño del arreglo como columna.
+   ![Lista de colecciones](imagenes/lista-colecciones-01.png)
    
-   Llamaremos a este campo servicios y para calcularlo usaremos la función `$size`. 
-   
-   ```json
-   {
-      servicios: {$size: "$amenities"}
-   }
-   ```
-   
-   ![imagen](imagenes/s5e31.png)
-   
-- Como el único dato que nos interesa es el número de servicios, sólo proyectaremos este resultado, para esto crearemos una nueva capa con `ADD STAGE` y elegiremos `$project`. Proyectamos el campo `name` y  `servicios` poniendo un `1` y quitamos el campo `_id` poniendo un 0.
+   Para crear una coleción, se presiona el botón `CREATE COLLECTION`, se escribe el nombre de la colección a crear y se presiona el botón `CREATE COLLECTION`
 
-   ```json
-   {
-      name: 1,
-      servicios: 1,
-      _id: 0
-   }
-   ```
+   ![Creando una colección](imagenes/creando-coleccion.png)
    
-   ![imagen](imagenes/s5e32.png)
-   
-- Ahora lo ordenamos añadiendo otra capa y usando `$sort`, recuerda -1 para descendente, 1 para ascendente.
+   Ahora se ve la lista de las bases de datos nuevamente, así que se dá clic sobre la base de datos con tu nombre y se verá algo similar a lo siguiente:
 
-   ```json
-   {
-      servicios: -1
-   }
-   ```
-   
-   ![imagen](imagenes/s5e33.png)
-   
-- Finalmente, limitamos la consulta a un registro usando `$limit`.
+   ![Lista de colecciones](imagenes/lista-colecciones-02.png)
 
-   ```json
-   {
-      1
-   }
-   ```
-   
-   ![imagen](imagenes/s5e34.png)
+1. Para importar datos a una colección lo primero es seleccionar la colección dando clic sobre el nombre, en este caso `users`
 
-[`Anterior`](../Readme.md#introducción-a-las-agregaciones) | [`Siguiente`](../Reto-03/Readme.md)
+   Una colección agrupa o almacena `Documentos`, que corresponden a `Registros` en SQL, al seleccionar la colección se muestra la lista de documentos:
 
-</div>
+   ![Colección users](imagenes/coleccion-users.png)
+
+   Como la colección se acaba de crear, la lista de documentos está vacía, así que para importar documentos, se usa la opción del menú `Collection > Import Data` que abre un diálogo para seleccionar del tipo de archivo y el archivo mismo.
+
+   ![Importando datos csv](imagenes/importando-datos.png)
+
+   Importante seleccionar el formato CSV y al elegir el archivo, seleccionar el archivo `users.csv`, recuerda que este archivo incluye un primer registro con el nombre de las columnas, que `MongoDB` usará para crear los documentos (o registros)
+
+   ![Datos csv importados](imagenes/datos-importados.png)
+
+   Ahora si ya aparecen documentos y se puede comprobar que cada campo tiene nombre y valor, así que la importación en relación a los campos es correcta
+
+   Otro forma de comprobar la correcta importación es la cantidad de documentos, y se observa que hay 6040 documentos (o registros) en la colección, lo que indica que todo está en orden.
+
+
+[`Anterior`](../Readme.md#realizando-operaciones-con-colecciones-e-importando-datos) | [`Siguiente`](../Reto-03/Readme.md)      

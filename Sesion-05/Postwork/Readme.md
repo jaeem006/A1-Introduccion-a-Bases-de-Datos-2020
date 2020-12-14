@@ -16,6 +16,10 @@
 
 #### Mismas preguntas, diferente lenguaje
 
-Usando como base las preguntas que definiste en el Postwork de las sesiones pasadas, reescribe o agrega nuevas consultas usando JSON. Debes especificar en cada caso, si el JSON corresponde a una proyección, filtro, ordenamiento, límite de resultados o a una agregación.
+1. Usando como base las preguntas que definiste en el Postwork de la Sesión 1, reescribe las consultas usando JSON. 
+
+2. Ejecútalas usando __MongoDB Compass__, recuerda que debes especificar en cada caso, si el JSON corresponde a una proyección, filtro, ordenamiento o límite de resultados.
 
 [`Anterior`](../Readme.md#4-postwork-memo) | [`Siguiente`](../Readme.md#4-postwork-memo)
+
+</div>

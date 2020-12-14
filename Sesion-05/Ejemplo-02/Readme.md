@@ -1,82 +1,44 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 2`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 5
+## Ejemplo 5: Operaciones con bases de datos
 
-## Ejemplo 2: Notación Punto y arreglos
-
-<div style="text-align: justify;">
-
-### 1. Objetivos :dart: 
-
-- Utilizar la notación punto para acceder a objetos anidados dentro de arreglos u otros objetos.
+### 1. Objetivos :dart:
+- Que el alumno se conecte a un servidor MongoDB
+- Que el alumno realice operaciones con bases de datos
+- Que el alumno cuente con una base de datos para trabajar
 
 ### 2. Requisitos :clipboard:
-
-1. MongoDB Compass instalado.
+1. MongoDB Compass instalado
+1. Datos de conexión al Servidor MongoDB
 
 ### 3. Desarrollo :rocket:
+1. Abre MongoDB Compass. En esta primera pantalla se muestran, del lado izquierdo, las conexiones que tienes configuradas o se muestra en blanco en caso de que sea la primera vez que realizas una conexión.
 
-1. La notación punto es una técnica mediante la cual los lenguajes de programación orientados a objetos permiten acceder a los atributos de un determinado objeto. Por ejemplo, en la base de datos `sample_airbnb.listingsAndReviews` se tiene un campo llamado `address` que a su vez incluye un atributo llamado `country` para indicar el país de dicha propiedad.
+   ![imagen](imagenes/s4e11.png)
 
-Con esto podemos busar todas las propiedades que se encuentren en España usando el siguiente filtro.
+1. En el campo que se encuentra activo, introduce el connection string que guardaste del ejemplo pasado.
 
-   ```json
-   {"address.country": "Spain"}
-   ```
-   
-Es importante que observes que para usar la notación punto debemos colocar el nombre de los campos entre comillas dobles, de lo contrario, no funcionará el punto.   
+1. Presiona el botón `Connect` y y si obtienes una pantalla **similar** la que se muestra en la siguiente imagen, la conexión se habrá realizado con éxito.
 
-   ![imagen](imagenes/s5e21.png)
+   ![imagen](imagenes/s4e13.png)
 
-2. De la misma forma podemos acceder a los elementos de un arreglo mediante sus índices. Por ejemplo, en la base de datos se tiene el arreglo `amenities`. Para acceder al segundo elemento usamos el índice 1. Los elementos comienzan a contarse a partir del 0. Más adelante mediante el uso de agregaciones obtendemos los elementos de un arreglo.
+   **¡Felicidades! Haz realizado tu primera conexión a una base de datos con MongoDB**
 
-De momento, podemos usar la función `$in` que permite filtrar mediante los elementos contenidos en el arreglo, por ejemplo, queremos las propiedades que tengan cocina, para ello usamos el filtro:
+1. En la ventana de __MongoDB Compass__ presionar el botón __CREATE DATABASE__ y crear la base de datos __MiNombre__ con la colección __users__, se tiene que definir el nombre de la primera colección para que se pueda crear la base de datos.
 
-   ```json
-   {amenities: {$in: ["Kitchen"]}}
-   ```
-   
-   ![imagen](imagenes/s5e22.png)
+   En lugar de __MiNombre__ utiliza tu nombre y primer apellido para nombrar a tu base de datos.
 
-3. Ahora podemos aplicar un filtro que incluya todo lo que hemos aprendido. Por ejemplo, podemos obtener la lista de todas las publicaciones con un costo menor a 100, que se encuentren en España, con una valoración de 50 o más puntos, que cuenten con Internet o Wifi y que tegan Elevador.
+   ![Creando base de datos](imagenes/creando-basededatos.png)
 
-Esta es una consulta más compleja que las anteriores, por lo que la construiremos por partes y luego la juntaremos.
+   Una vez llenado los datos, presionar el botón __CREATE DATABASE__
 
-   - Publicaciones con un costro menor a 100.
-   
-      ```json
-      {price: {$lte: 100}}
-      ```
-   
-   - En españa.
-   
-      ```json
-      {"address.country_code": "ES"}
-      ```
-   
-   - Con una valoración de 50 o más puntos.
-   
-      ```json
-      {"review_scores.review_scores_rating": {$gte: 50}}
-      ```
-      
-   - Que cuenten con Internet o Wifi.
-   
-      ```json
-      {amenities: {$in: ["Internet, "Wifi"]}
-      ```
-      
-   - Que tengan elevador.
-      
-      ```json
-      {amenities: {$in: ["Elevator"]}}
-      ```
-      
-   - Integrando todo.
-   ```json
-   {price: {$lte: 100}, "address.country_code": "ES", "review_scores.review_scores_rating":{$gte: 50}, amenities: {$in:["Internet", "Wifi"]}, amenities:{$in:["Elevator"]}}
-   ```
+   Se deberá ver nuestra nueva base de datos en la lista:
 
-   ![imagen](imagenes/s5e23.png)
+   ![Lista de bases de datos](imagenes/lista-basededatos.png)
 
-[`Anterior`](../Readme.md#notación-punto-y-arreglos) | [`Siguiente`](../Reto-02/Readme.md)
+1. Para hacer uso de la base de datos __MiNombre__ dar clic en el nombre y se obtendrá la lista de colecciones disponibles:
 
-</div>
+   ![Lista de colecciones](imagenes/lista-colecciones.png)
+
+   Se trabajará con Colecciones en el siguiente ejemplo.
+
+[`Anterior`](../Readme.md#operaciones-con-bases-de-datos-1) | [`Siguiente`](../Readme.md#realizando-operaciones-con-colecciones-e-importando-datos)      

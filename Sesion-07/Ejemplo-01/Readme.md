@@ -1,12 +1,12 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Ejemplo 1`
 
-## Ejemplo 1: Conexión a MongoDB
+## Ejemplo 1: Agrupamientos
 
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart:
+### 1. Objetivos :dart: 
 
-- Realizar la conexión a MongoDB mediante el cliente MongoDB Compass.
+- Repasar la estructura de las agregaciones de tipo `$group`.
 
 ### 2. Requisitos :clipboard:
 
@@ -14,28 +14,67 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Abre MongoDB Compass. En esta primera pantalla se muestran, del lado izquierdo, las conexiones que tienes configuradas o se muestra en blanco en caso de que sea la primera vez que realizas una conexión.
-
-   ![imagen](imagenes/s4e11.png)
-
-2. Abajo del título `New Connection`, da clic en el texto que dice `Fill in connection fields individually`. Cambiará el formato de la pantalla. Introduce los datos necesarios para realizar la conexión. Pide al experto que te los proporcione.
-
-   - **Hostname:** Dirección del servidor al cuál nos conectaremos.
-   - **Port:** Puerto a través del cual realizaremos la conexión.
-   - **SRV Record:** Dejar apagado.
-   - **Authentication:** Username / Password.
-   - **Username:** Nombre de usuario.
-   - **Password:** Contraseña de acceso.
-   - **Authentication Database:** Base de datos con la que se definió el usuario.
+Para ejemplificar el concepto de agrupamiento, buscaremos  el costo promedio de una habitación de tipo casa, continuaremos usando la base de datos `sample_airbnb.listingsAndReviews`:
    
-   ![imagen](imagenes/s4e12.png)
+Necesitamos filtrar primero las propiedades de tipo casa, para ello usaremos la agregación `$match`.
 
-3. Presiona el botón `Connect` y y si obtienes una pantalla como la que se muestra en la siguiente imagen, la conexión se habrá realizado con éxito.
-
-   ![imagen](imagenes/s4e13.png)
-
-**¡Felicidades! Haz realizado tu primera conexión a una base de datos con MongoDB**
-
-[`Anterior`](../Readme.md#conexión-a-mongodb) | [`Siguiente`](../Readme.md#colecciones-documentos-y-proyecciones)
-
-</div>
+   ```json
+   {
+      property_type: "House"
+   }
+   ```
+   
+   ![imagen](imagenes/s6e11.png)
+   
+Adicionalmente, necesitamos propiedades que tengan uno o más cuartos, para poder obtener el precio por habitación. Añadimos este filtro a la agregación anteior.
+   
+   ```json
+   {
+      property_type: "House",
+      bedrooms: {$gte: 1}
+   }
+   ```
+   
+   ![imagen](imagenes/s6e12.png)
+   
+Para obtener el costo de recamara de cada propiedad, debemos dividir el precio entre el número de recámaras, para esto usamos la agregación `$addFields`.
+   
+   ```json
+   {
+      costo_recamara: {$divide: ["$price", "$bedrooms"]}
+   }
+   ```
+   
+   ![imagen](imagenes/s6e13.png)
+   
+Ahora agruparemos el total de racámaras y el costo de recámara de todos los documentos usando una agregación `$group`. Dado que no estamos agrupando por un campo en específico, si no por todos los documentos, colocamos el valor `null` en el campo de agrupamiento.
+   
+   ```json
+   {
+     _id: null,
+     recamaras: {
+        $sum: 1
+     },
+     total: {
+        $sum: "$costo_recamara"
+     }
+   }
+   ```
+   
+   ![imagen](imagenes/s6e14.png)
+   
+En este caso estamos haciendo uso de dos acumuladores. El primero almacenará el resultado en un campo `recamaras` y hace uso de la función `$sum`. Podemos usar `$sum` como un contador si en lugar de colocar el nombre de un campo, colocamos un 1. De esta forma por cada documento en la colección sumará un 1, dando como total el número de documentos en la colección. En el campo `total` estamos almacenando la suma del campo `costo_recamara` que calculamos en la capa anterior.
+   
+Ahora, para obtener el costo promedio, debemos dividir el total entre el número de recámaras. Para esto usamos la agregación `$addFields`.
+   
+   ```json
+   {
+      costo_promedio: {
+        $divide: ["$total", "$recamaras"]
+      }
+   }
+   ```
+   
+   ![imagen](imagenes/s6e15.png)
+   
+[`Anterior`](../Readme.md#agrupamientos) | [`Siguiente`](../Reto-01/Readme.md)   

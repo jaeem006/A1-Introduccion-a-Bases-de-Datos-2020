@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Reto 3`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 3`
 	
-## Reto 3: Generación de vistas
+## Reto 3: Introducción a las agregaciones
 
 <div style="text-align: justify;">
 
@@ -14,6 +14,8 @@
 
 ### 3. Desarrollo :rocket:
 
-Usando el *pipeline* que generaste en el Reto 2, genera la vista correspondiente.
+Usando la colección `sample_airbnb.listingsAndReviews`, mediante el uso de agregaciones, encontrar el número de publicaciones que tienen conexión a Internet, sea desde Wifi o desde cable (Ethernet).
 
-[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)   
+[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+
+</div>

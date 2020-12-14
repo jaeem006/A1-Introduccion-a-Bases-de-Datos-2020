@@ -1,10 +1,10 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Reto 2`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Reto 2`
 	
-## Reto 2: Filtros básicos
+## Reto 2: Asociación de colecciones
 
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart:
+### 1. Objetivos :dart: 
 
 - Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
 
@@ -14,13 +14,10 @@
 
 ### 3. Desarrollo :rocket:
 
-Usando la base de datos `sample_mflix`, agrega proyeccciones, filtros, ordenamientos y límites que permitan contestar las siguientes preguntas.
+Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario. Construye un pipeline que genere como resultado estos datos.
 
-- ¿Qué comentarios ha hecho Greg Powell?
-- ¿Qué comentarios han hecho Greg Powell o Mercedes Tyler?
-- ¿Cuál es el máximo número de comentarios en una película?
-- ¿Cuál es título de las cinco películas más comentadas?
+**NO CIERES ESTE *PIPELINE* PUES LO USAREMOS MÁS ADELANTE**
 
-[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#generación-de-vistas)   
 
 </div>

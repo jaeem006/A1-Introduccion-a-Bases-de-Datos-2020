@@ -1,12 +1,12 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Reto 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 1`
 	
-## Reto 1: Agrupamientos
+## Reto 1: Expresiones regulares
 
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart: 
 
-- Poner en práctica el uso de agrupamientos.
+- Poner en práctica el uso de expresiones regulares.
 
 ### 2. Requisitos :clipboard:
 
@@ -14,6 +14,13 @@
 
 ### 3. Desarrollo :rocket:
 
-Con base en el ejemplo 1, modifica el agrupamiento para que muestre el costo promedio por habitación por país de las propiedades de tipo casa.
+Usando la base de datos `sample_airbnblistingsAndReviews`, realiza los siguientes filtros:
 
-[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#asociación-de-colecciones)   
+- Propiedades que no permitan fiestas.
+- Propiedades que admitan mascotas.
+- Propiedades que no permitan fumadores.
+- Propiedades que no permitan fiestas ni fumadores.
+
+[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#notación-punto-y-arreglos)
+
+</div>
