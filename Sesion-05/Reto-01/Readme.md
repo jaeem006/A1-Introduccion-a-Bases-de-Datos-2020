@@ -1,6 +1,6 @@
 [`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > Reto 1
 
-## Reto 3: Realizando operaciones con Colecciones e importando datos
+## Reto 1: Realizando operaciones con Colecciones e importando datos
 
 ### 1. Objetivos :dart:
 - Que el alumno cuente con una Colección para importar datos

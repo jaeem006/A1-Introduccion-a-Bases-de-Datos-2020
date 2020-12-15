@@ -54,6 +54,6 @@
 
 **¡Felicidades! Haz realizado tu primera consulta en una base de datos con MongoDB**
 
-[`Anterior`](../Readme.md#colecciones-documentos-y-proyecciones) | [`Siguiente`](../Reto-2/Readme.md)
+[`Anterior`](../Readme.md#colecciones-documentos-y-proyecciones) | [`Siguiente`](../Reto-02/Readme.md)
 
 </div>
