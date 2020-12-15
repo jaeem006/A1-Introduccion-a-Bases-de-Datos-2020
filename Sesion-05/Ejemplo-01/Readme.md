@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 4
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > Ejemplo 1
 
-## Ejemplo 4: Configuración de __MongoDB__ en la nube
+## Ejemplo 1: Configuración de __MongoDB__ en la nube
 
 ### 1. Objetivos :dart:
 - Que el alumno configure MongoDB en la nube

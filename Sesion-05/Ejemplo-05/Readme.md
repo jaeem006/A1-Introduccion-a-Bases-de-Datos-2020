@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 2`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 5`
 
-## Ejemplo 2: Filtros básicos
+## Ejemplo 5: Filtros básicos
 
 <div style="text-align: justify;">
 
@@ -115,6 +115,6 @@
 
    ![imagen](imagenes/s4e36.png)
 
-[`Anterior`](../Readme.md#filtros-básicos) | [`Siguiente`](../Reto-02/Readme.md)
+[`Anterior`](../Readme.md#filtros-básicos) | [`Siguiente`](../Reto-03/Readme.md)
 
 </div>

@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 2`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 3`
 	
-## Reto 2: Filtros básicos
+## Reto 3: Filtros básicos
 
 <div style="text-align: justify;">
 
@@ -21,6 +21,6 @@ Usando la base de datos `sample_mflix`, agrega proyeccciones, filtros, ordenamie
 - ¿Cuál es el máximo número de comentarios en una película?
 - ¿Cuál es título de las cinco películas más comentadas?
 
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+[`Anterior`](../Ejemplo-05/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
 
 </div>

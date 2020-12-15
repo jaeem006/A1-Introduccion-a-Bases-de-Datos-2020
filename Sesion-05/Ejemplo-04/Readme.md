@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 4`
 
-## Ejemplo 1: Colecciones, Documentos y Proyecciones
+## Ejemplo 4: Colecciones, Documentos y Proyecciones
 
 <div style="text-align: justify;">
 
@@ -54,6 +54,6 @@
 
 **¡Felicidades! Haz realizado tu primera consulta en una base de datos con MongoDB**
 
-[`Anterior`](../Readme.md#colecciones-documentos-y-proyecciones) | [`Siguiente`](../Reto-01/Readme.md)
+[`Anterior`](../Readme.md#colecciones-documentos-y-proyecciones) | [`Siguiente`](../Reto-2/Readme.md)
 
 </div>

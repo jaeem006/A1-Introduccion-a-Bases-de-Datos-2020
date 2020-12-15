@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 6
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > Ejemplo 3
 
-## Ejemplo 6: Realizando operaciones con Colecciones e importando datos
+## Ejemplo 3: Realizando operaciones con Colecciones e importando datos
 
 ### 1. Objetivos :dart:
 - Que el alumno realice operaciones con Colecciones
@@ -47,4 +47,4 @@ A diferencia de SQL, las Colecciones sólo se crean y no es necesario definir ca
    Otro forma de comprobar la correcta importación es la cantidad de documentos, y se observa que hay 6040 documentos (o registros) en la colección, lo que indica que todo está en orden.
 
 
-[`Anterior`](../Readme.md#realizando-operaciones-con-colecciones-e-importando-datos) | [`Siguiente`](../Reto-03/Readme.md)      
+[`Anterior`](../Readme.md#realizando-operaciones-con-colecciones-e-importando-datos) | [`Siguiente`](../Reto-01/Readme.md)      
