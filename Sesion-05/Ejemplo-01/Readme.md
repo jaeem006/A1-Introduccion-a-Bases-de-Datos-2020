@@ -15,6 +15,12 @@
 
    ![Registro en MongoDB atlas](imagenes/registro-mongodb-atlas.png)
 
+1. Llenamos el formulario con la información necesaria.
+
+   ![Formulario](imagenes/2form.png)
+
+1. En la siguiente ventana damos click en la opción __skip__ al final.
+    ![conf](imagenes/3lenguaje.png)
 1. Elegir el tipo de __Cluster__, en donde se seleccionará __Starter Clusters__ que es el que es libre de costo, dar clic en el botón __Create a Cluster__.
 
    ![Seleccionando cluster](imagenes/seleccionando-cluster.png)
@@ -30,6 +36,10 @@
    Cuando el __Cluster__ ya está creado se observa la página como la siguiente:
 
    ![Cluster creado](imagenes/creando-cluster-02.png)
+
+   Abrimos las opciones del cluster dando click en el botón con 3 puntos. Y seleccionamos __Load Sample Dataset__ para que agregue al cluster algunas bases de datos de ejemplo.
+
+   ![Sample](imagenes/4load.png)
 
 1. Lo que sigue es iniciar una conexión al cluster de MongoDB en la nube, esto se realiza dando clic en el botón __CONNECT__
 
