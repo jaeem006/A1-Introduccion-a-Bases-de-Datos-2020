@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 3`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Ejemplo 3`
 
 ## Ejemplo 3: Introducción a las agregaciones
 
@@ -26,7 +26,7 @@ Por ejemplo, queremos saber cuál es la propiedad con mayor número de servicios
 
    Con `addFields` podemos agregar campos como resultado de aplicar funciones a otros campos de la colección. De esta forma agregaremos el tamaño del arreglo como columna.
    
-   Llamaremos a este campo servicios y para calcularlo usaremos la función `$size`. 
+   Llamaremos a este campo `servicios` y para calcularlo usaremos la función `$size`. 
    
    ```json
    {
