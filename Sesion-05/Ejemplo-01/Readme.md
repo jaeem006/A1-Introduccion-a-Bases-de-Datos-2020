@@ -41,7 +41,7 @@
 
    ![Sample](imagenes/4load.png)
 
-1. Lo que sigue es iniciar una conexión al cluster de MongoDB en la nube, esto se realiza dando clic en el botón __CONNECT__
+1. Lo que sigue es una conexión al cluster de MongoDB en la nube, esto se realiza dando clic en el botón __CONNECT__
 
   ![Conectando al servidor MongoDB](imagenes/conectando-a-mongodb.png)
   
