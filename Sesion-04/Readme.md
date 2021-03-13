@@ -54,6 +54,7 @@ Para crear una tabla se usa el comando (en su forma simple):
 ---
 
 ##### <ins>Operaciones con llaves</ins>
+<img src="imagenes/key.png" align="right" height="200" width="300">
 
 Las llaves son el mecanismo con el cual se identifican los registros de una base de datos o se relacionan estos registros con otros pertenecientes a una tabla distinta.
 
