@@ -58,9 +58,18 @@ Para crear una tabla se usa el comando (en su forma simple):
 
 Las llaves son el mecanismo con el cual se identifican los registros de una base de datos o se relacionan estos registros con otros pertenecientes a una tabla distinta.
 
-Existen dos tipos de llaves las Primarias y Foráneas. 
+Existen dos tipos de llaves:
 
+- **Llaves primarias** El identificador único de los registros de una tabla.
+- **Llaves foráneas** utilizadas para definir relaciones entre tablas.
 
+Para crearlas en SQL se usan los comando:
+
+```sql
+PRIMARY KEY(<columna>,...)
+FOREIGN KEY(<columna>,...) REFERENCES <tabla>(<columna-de-referencia>)
+
+```
 
 - [**`EJEMPLO 3`**](Ejemplo-04/Readme.md)
 
