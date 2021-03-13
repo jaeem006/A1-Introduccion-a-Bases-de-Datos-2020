@@ -1,6 +1,6 @@
 [`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Ejemplo 3
 
-## Ejemplo 3: 	Importando datos a una tabla en formato CSV
+## Ejemplo 4: 	Importando datos a una tabla en formato CSV
 
 ### 1. Objetivos :dart:
  - Conocer el procedimiento para importación de datos a una tabla

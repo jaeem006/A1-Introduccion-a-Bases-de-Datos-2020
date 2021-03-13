@@ -1,6 +1,6 @@
 [`Introducción a Bases de Datos`](../../Readme.md) 
 
-## Ejemplo 1: Llaves foráneas, llaves primarias compuestas y valores 
+## Ejemplo 3: Llaves foráneas, llaves primarias compuestas y valores 
 
 ### 1. Objetivos :dart:
 - Relacionar las tablas de una base de datos en SQL definiendo llaves foráneas.
@@ -98,5 +98,5 @@ Por último vamos a definir la relación entre las tablas indicando que userId y
 
 <br/>
 
-[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md) 
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md#importando-datos-a-una-tabla-en-formato-csv) 
   

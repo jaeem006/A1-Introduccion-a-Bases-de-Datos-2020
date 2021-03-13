@@ -14,11 +14,11 @@
 
 ### 2. Contenido :blue_book:
 
-##### <ins>Inicialización de servidores locales</ins>
+<!-- ##### <ins>Inicialización de servidores locales</ins>
 
 Un servidor de bases de datos se compone de distintas bases con propósitos distintos. Por ejemplo, podemos tener en un mismo servidor una base de datos de empleados y otra de prodcutos, si se trata de una tienda.
 
-- [**`EJEMPLO 0`**](Ejemplo-00/Readme.md)
+- [**`EJEMPLO 0`**](Ejemplo-00/Readme.md) -->
 
 ---
 ##### <ins>Operaciones con bases de datos</ins>
@@ -52,16 +52,6 @@ Para crear una tabla se usa el comando (en su forma simple):
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
 
 ---
-##### <ins>Importando datos a una tabla en formato CSV</ins>
-<img src="imagenes/imagen3.jpg" align="right" height="200" width="300">
-
-Para cargar datos en una tabla o base de datos completa es usar que se deban utilizar archivos como lo son *CSV* o *JSON*. *CSV* es uno de los más utilizados y admitidos por __MySQL Workbench__.
-
-Un archivo *CSV* se conforma de un encabezado que indica el nombre de las columnas separado por comas y cada uno de los registros, separando el valor para cada campo por comas. 
-
-- [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
-
----
 
 ##### <ins>Operaciones con llaves</ins>
 
@@ -71,7 +61,18 @@ Existen dos tipos de llaves las Primarias y Foráneas.
 
 
 
-- [**`EJEMPLO 4`**](Ejemplo-04/Readme.md)
+- [**`EJEMPLO 3`**](Ejemplo-04/Readme.md)
+
+---
+##### <ins>Importando datos a una tabla en formato CSV</ins>
+<img src="imagenes/imagen3.jpg" align="right" height="200" width="300">
+
+Para cargar datos en una tabla o base de datos completa es usar que se deban utilizar archivos como lo son *CSV* o *JSON*. *CSV* es uno de los más utilizados y admitidos por __MySQL Workbench__.
+
+Un archivo *CSV* se conforma de un encabezado que indica el nombre de las columnas separado por comas y cada uno de los registros, separando el valor para cada campo por comas. 
+
+- [**`EJEMPLO 4`**](Ejemplo-03/Readme.md)
+
 
 ---
 
