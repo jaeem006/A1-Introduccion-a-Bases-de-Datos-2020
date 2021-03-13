@@ -94,4 +94,22 @@
    
    ![imagen](imagenes/s7e39.png)
 
+
+### Carga de archivos desde SQL.
+
+Para hacer este mismo proceso desde un cliente como `mycli` o directamente en código de SQL se utiliza el comando `LOAD DATA INFILE` de la siguiente forma:
+
+```sql
+LOAD DATA INFILE <ruta-del-archivo> 
+   INTO TABLE <tabla>;
+```
+
+Por ejemplo, si queremos poblar la tabla usuarios se hace de la siguiente forma:
+
+```sql
+LOAD DATA INFILE '/Users/javi/Documents/BEDU/Data/ml-1m/users.csv' INTO
+  TABLE users;
+```
+
+
 [`Anterior`](../Readme.md#importando-datos-a-una-tabla-en-formato-csv) | [`Siguiente`](../Readme.md)      
